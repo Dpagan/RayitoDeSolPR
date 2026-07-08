@@ -1,0 +1,14 @@
+{
+  "name": "RayitoDeSolPR.org — Recursos para Diversidad Funcional en PR",
+  "short_name": "RayitoDeSolPR",
+  "description": "Directorio gratuito de recursos para niños y jóvenes con diversidad funcional en Puerto Rico.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFCF8",
+  "theme_color": "#E8842C",
+  "lang": "es",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
