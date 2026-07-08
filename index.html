@@ -4,12 +4,12 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://rayitodesolpr.org">
 <meta property="og:title" content="RayitoDeSolPR.org — Recursos para Niños con Diversidad Funcional en Puerto Rico">
-<meta property="og:description" content="Directorio gratuito con 100+ recursos para familias de niños y jóvenes con discapacidades en los 78 municipios de PR.">
+<meta property="og:description" content="Directorio gratuito con 90+ recursos para familias de niños y jóvenes con discapacidades en los 78 municipios de PR.">
 <meta property="og:image" content="https://rayitodesolpr.org/og-image.png">
 <meta property="og:locale" content="es_PR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="RayitoDeSolPR.org — Recursos para Familias en Puerto Rico">
-<meta name="twitter:description" content="100+ recursos gratuitos para niños y jóvenes con necesidades especiales en los 78 municipios de PR.">
+<meta name="twitter:description" content="90+ recursos gratuitos para niños y jóvenes con necesidades especiales en los 78 municipios de PR.">
 <meta name="twitter:image" content="https://rayitodesolpr.org/og-image.png">
 <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#E8842C">
@@ -29,6 +29,8 @@
   --coral-soft: #FCE8EB;
   --gold: #D4A932;
   --gold-soft: #FDF6E1;
+  --pink: #E88BC3;
+  --pink-soft: #FDF0F8;
 
   --bg: #FFFCF8;
   --bg-alt: #FFF7F0;
@@ -39,39 +41,26 @@
   --border: #E5D8CB;
   --border-light: #F0E8DE;
 
-  --radius: 14px;
-  --radius-sm: 8px;
-  --shadow-card: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);
-  --shadow-hover: 0 4px 20px rgba(0,0,0,0.08);
-  --transition: 0.2s ease;
+  --radius: 18px;
+  --radius-sm: 12px;
+  --shadow-card: 0 2px 8px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.03);
+  --shadow-hover: 0 8px 30px rgba(0,0,0,0.1);
+  --transition: 0.25s ease;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --sun: #F0A050;
-    --sun-deep: #D88A3A;
-    --sun-soft: #2E1E0E;
-    --sky: #5BB8E8;
-    --sky-soft: #0E1E2E;
-    --green: #6EC47E;
-    --green-soft: #0E2E16;
-    --violet: #A88DD0;
-    --violet-soft: #1E1630;
-    --coral: #F07888;
-    --coral-soft: #2E1A1E;
-    --gold: #E8C050;
-    --gold-soft: #2A2210;
-
-    --bg: #161210;
-    --bg-alt: #1E1A16;
-    --card: #221E1A;
-    --text: #F0E8E0;
-    --text-mid: #B0A898;
-    --text-light: #6E665E;
-    --border: #342E28;
-    --border-light: #2A2420;
-    --shadow-card: 0 1px 3px rgba(0,0,0,0.2);
-    --shadow-hover: 0 4px 20px rgba(0,0,0,0.3);
+    --sun: #F0A050; --sun-deep: #D88A3A; --sun-soft: #2E1E0E;
+    --sky: #5BB8E8; --sky-soft: #0E1E2E;
+    --green: #6EC47E; --green-soft: #0E2E16;
+    --violet: #A88DD0; --violet-soft: #1E1630;
+    --coral: #F07888; --coral-soft: #2E1A1E;
+    --gold: #E8C050; --gold-soft: #2A2210;
+    --pink: #F0A0D0; --pink-soft: #2E1A28;
+    --bg: #161210; --bg-alt: #1E1A16; --card: #221E1A;
+    --text: #F0E8E0; --text-mid: #B0A898; --text-light: #6E665E;
+    --border: #342E28; --border-light: #2A2420;
+    --shadow-card: 0 2px 8px rgba(0,0,0,0.2); --shadow-hover: 0 8px 30px rgba(0,0,0,0.3);
   }
 }
 :root[data-theme="dark"] {
@@ -81,10 +70,11 @@
   --violet: #A88DD0; --violet-soft: #1E1630;
   --coral: #F07888; --coral-soft: #2E1A1E;
   --gold: #E8C050; --gold-soft: #2A2210;
+  --pink: #F0A0D0; --pink-soft: #2E1A28;
   --bg: #161210; --bg-alt: #1E1A16; --card: #221E1A;
   --text: #F0E8E0; --text-mid: #B0A898; --text-light: #6E665E;
   --border: #342E28; --border-light: #2A2420;
-  --shadow-card: 0 1px 3px rgba(0,0,0,0.2); --shadow-hover: 0 4px 20px rgba(0,0,0,0.3);
+  --shadow-card: 0 2px 8px rgba(0,0,0,0.2); --shadow-hover: 0 8px 30px rgba(0,0,0,0.3);
 }
 :root[data-theme="light"] {
   --sun: #E8842C; --sun-deep: #C26A1A; --sun-soft: #FFF3E8;
@@ -93,11 +83,12 @@
   --violet: #8B6BB5; --violet-soft: #F0EAF7;
   --coral: #E05A6B; --coral-soft: #FCE8EB;
   --gold: #D4A932; --gold-soft: #FDF6E1;
+  --pink: #E88BC3; --pink-soft: #FDF0F8;
   --bg: #FFFCF8; --bg-alt: #FFF7F0; --card: #FFFFFF;
   --text: #2A1F14; --text-mid: #5C4E3E; --text-light: #8A7E70;
   --border: #E5D8CB; --border-light: #F0E8DE;
-  --shadow-card: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);
-  --shadow-hover: 0 4px 20px rgba(0,0,0,0.08);
+  --shadow-card: 0 2px 8px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.03);
+  --shadow-hover: 0 8px 30px rgba(0,0,0,0.1);
 }
 
 * { margin:0; padding:0; box-sizing:border-box; }
@@ -124,19 +115,39 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
 
 .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
+/* Geometric decorations */
+.geo-circle {
+  position: absolute; border-radius: 50%; opacity: 0.12; pointer-events: none;
+}
+.geo-triangle {
+  position: absolute; width: 0; height: 0; opacity: 0.1; pointer-events: none;
+}
+.geo-dots {
+  position: absolute; opacity: 0.08; pointer-events: none;
+  background-image: radial-gradient(circle, #fff 2px, transparent 2px);
+  background-size: 20px 20px;
+}
+
+/* Wave divider */
+.wave-divider {
+  position: relative; width: 100%; overflow: hidden; line-height: 0;
+}
+.wave-divider svg { display: block; width: 100%; height: 40px; }
+
+/* Emergency Strip */
 .emergency-strip {
   background: var(--coral);
   color: #fff;
   padding: 8px 0;
   font-size: 13px;
   font-weight: 500;
-  letter-spacing: 0.01em;
 }
 .emergency-strip .container {
   display: flex; flex-wrap: wrap; gap: 6px 24px; align-items: center; justify-content: center;
 }
 .emergency-strip a { color: #fff; font-weight: 700; text-decoration: underline; text-underline-offset: 2px; }
 
+/* Header */
 .header {
   background: var(--card);
   border-bottom: 1px solid var(--border-light);
@@ -149,15 +160,17 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
   display: flex; align-items: center; gap: 10px;
 }
 .logo-icon {
-  width: 36px; height: 36px; background: linear-gradient(135deg, #F0A050, #E8842C); border-radius: 10px;
-  display: flex; align-items: center; justify-content: center; color: #fff; font-size: 18px;
+  width: 40px; height: 40px; background: linear-gradient(135deg, #F0A050, #E8842C); border-radius: 12px;
+  display: flex; align-items: center; justify-content: center; color: #fff; font-size: 20px;
+  box-shadow: 0 2px 8px rgba(232,132,44,0.3);
 }
 .header-actions { display: flex; align-items: center; gap: 8px; }
 
+/* Hero */
 .hero {
-  background: linear-gradient(160deg, #C26A1A 0%, #E8842C 40%, #F0A050 100%);
+  background: linear-gradient(160deg, #C26A1A 0%, #E8842C 35%, #F0A050 70%, #F5C06A 100%);
   color: #fff;
-  padding: 64px 0 56px;
+  padding: 72px 0 64px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -165,62 +178,132 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
 .hero::before {
   content: '';
   position: absolute; inset: 0;
-  background: radial-gradient(ellipse at 20% 80%, rgba(255,255,255,0.08) 0%, transparent 60%),
-              radial-gradient(ellipse at 80% 20%, rgba(255,255,255,0.05) 0%, transparent 50%);
+  background: radial-gradient(ellipse at 20% 80%, rgba(255,255,255,0.1) 0%, transparent 60%),
+              radial-gradient(ellipse at 80% 20%, rgba(255,255,255,0.06) 0%, transparent 50%);
 }
-.hero > * { position: relative; }
-.hero h1 { font-size: clamp(26px, 4.5vw, 42px); margin-bottom: 14px; font-weight: 700; }
-.hero p { font-size: 18px; max-width: 620px; margin: 0 auto 32px; opacity: 0.92; line-height: 1.55; }
+.hero > * { position: relative; z-index: 2; }
+.hero h1 { font-size: clamp(26px, 4.5vw, 44px); margin-bottom: 16px; font-weight: 700; }
+.hero p { font-size: 18px; max-width: 640px; margin: 0 auto 36px; opacity: 0.92; line-height: 1.55; }
 
+/* Floating shapes in hero */
+.hero .shape {
+  position: absolute; pointer-events: none; z-index: 1;
+}
+.hero .shape-circle-1 {
+  width: 120px; height: 120px; border-radius: 50%; border: 3px solid rgba(255,255,255,0.15);
+  top: 15%; left: 5%;
+  animation: float 8s ease-in-out infinite;
+}
+.hero .shape-circle-2 {
+  width: 60px; height: 60px; border-radius: 50%; background: rgba(255,255,255,0.08);
+  top: 60%; right: 8%;
+  animation: float 6s ease-in-out infinite 1s;
+}
+.hero .shape-triangle-1 {
+  width: 0; height: 0;
+  border-left: 25px solid transparent; border-right: 25px solid transparent;
+  border-bottom: 43px solid rgba(255,255,255,0.1);
+  top: 25%; right: 15%;
+  animation: float 7s ease-in-out infinite 0.5s;
+  transform: rotate(15deg);
+}
+.hero .shape-triangle-2 {
+  width: 0; height: 0;
+  border-left: 18px solid transparent; border-right: 18px solid transparent;
+  border-bottom: 31px solid rgba(255,255,255,0.08);
+  bottom: 20%; left: 12%;
+  animation: float 9s ease-in-out infinite 2s;
+  transform: rotate(-20deg);
+}
+.hero .shape-square-1 {
+  width: 40px; height: 40px; border: 3px solid rgba(255,255,255,0.12);
+  border-radius: 8px;
+  top: 50%; left: 18%;
+  animation: float 7s ease-in-out infinite 1.5s;
+  transform: rotate(30deg);
+}
+.hero .shape-star-1 {
+  font-size: 30px; opacity: 0.15;
+  top: 30%; right: 25%;
+  animation: float 6s ease-in-out infinite 0.8s;
+}
+.hero .shape-dots {
+  width: 80px; height: 80px;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.2) 2px, transparent 2px);
+  background-size: 16px 16px;
+  bottom: 15%; right: 5%;
+}
+.hero .shape-ring {
+  width: 80px; height: 80px; border-radius: 50%; border: 3px solid rgba(255,255,255,0.1);
+  bottom: 30%; left: 3%;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(var(--r, 0deg)); }
+  50% { transform: translateY(-15px) rotate(var(--r, 0deg)); }
+}
+
+/* Search */
 .search-wrap { max-width: 540px; margin: 0 auto; position: relative; }
 .search-wrap input {
   width: 100%; padding: 16px 20px 16px 50px;
-  background: rgba(255,255,255,0.15); border: 2px solid rgba(255,255,255,0.25);
-  border-radius: 12px; font-size: 17px; color: #fff; outline: none;
+  background: rgba(255,255,255,0.18); border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 14px; font-size: 17px; color: #fff; outline: none;
   transition: background var(--transition), border-color var(--transition);
   font-family: inherit;
 }
 .search-wrap input::placeholder { color: rgba(255,255,255,0.6); }
-.search-wrap input:focus { background: rgba(255,255,255,0.22); border-color: rgba(255,255,255,0.5); }
+.search-wrap input:focus { background: rgba(255,255,255,0.25); border-color: rgba(255,255,255,0.5); }
 .search-wrap .search-icon { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); opacity: 0.6; }
 
+/* View Toggle */
 .view-toggle {
-  display: flex; gap: 0; background: var(--bg-alt); border-radius: 10px; padding: 4px;
+  display: flex; gap: 0; background: var(--bg-alt); border-radius: 12px; padding: 4px;
   margin: 0 auto 8px; width: fit-content;
 }
 .view-btn {
-  padding: 10px 24px; border-radius: 8px; font-size: 15px; font-weight: 600;
+  padding: 10px 24px; border-radius: 10px; font-size: 15px; font-weight: 600;
   cursor: pointer; border: none; background: none; color: var(--text-mid);
   font-family: inherit; transition: all var(--transition);
 }
 .view-btn.active { background: var(--card); color: var(--sun); box-shadow: var(--shadow-card); }
 
+/* Category Grid */
 .cat-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 16px;
+  gap: 18px;
   padding: 32px 0;
 }
 .cat-card {
   background: var(--card);
-  border: 1px solid var(--border-light);
+  border: 2px solid var(--border-light);
   border-radius: var(--radius);
-  padding: 24px 22px;
+  padding: 26px 24px;
   cursor: pointer;
   transition: box-shadow var(--transition), border-color var(--transition), transform var(--transition);
   display: block; text-decoration: none; color: inherit;
+  position: relative; overflow: hidden;
 }
-.cat-card:hover { box-shadow: var(--shadow-hover); border-color: var(--sun); transform: translateY(-2px); }
+.cat-card::after {
+  content: ''; position: absolute; top: 0; right: 0;
+  width: 60px; height: 60px; border-radius: 0 0 0 60px;
+  background: var(--border-light); opacity: 0.5;
+  transition: opacity var(--transition);
+}
+.cat-card:hover { box-shadow: var(--shadow-hover); border-color: var(--sun); transform: translateY(-3px); }
+.cat-card:hover::after { opacity: 0; }
 .cat-card:focus-visible { outline: 2px solid var(--sun); outline-offset: 2px; }
 .cat-icon {
-  width: 48px; height: 48px; border-radius: 12px;
+  width: 52px; height: 52px; border-radius: 14px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 24px; margin-bottom: 14px;
+  font-size: 26px; margin-bottom: 14px;
 }
 .cat-card h3 { font-size: 18px; margin-bottom: 6px; }
 .cat-card p { font-size: 14px; color: var(--text-mid); line-height: 1.5; margin-bottom: 10px; }
 .cat-count { font-size: 12px; font-weight: 700; color: var(--sun); letter-spacing: 0.03em; text-transform: uppercase; }
 
+/* Category Section */
 .category-section { padding: 40px 0 48px; border-top: 1px solid var(--border-light); display: none; }
 .category-section.visible { display: block; }
 .category-section h2 { font-size: 26px; margin-bottom: 6px; color: var(--sun); }
@@ -232,6 +315,7 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
 }
 .back-link:hover { color: var(--sun-deep); }
 
+/* Resource Cards */
 .resource-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -242,16 +326,16 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
   border: 1px solid var(--border-light);
   border-radius: var(--radius);
   padding: 22px 20px;
-  transition: border-color var(--transition);
+  transition: border-color var(--transition), box-shadow var(--transition);
 }
-.resource-card:hover { border-color: var(--border); }
+.resource-card:hover { border-color: var(--border); box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
 .resource-card h4 {
   font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 16px; font-weight: 700; margin-bottom: 4px; color: var(--text); line-height: 1.35;
 }
 .tag {
-  display: inline-block; font-size: 11px; font-weight: 700; padding: 3px 8px;
-  border-radius: 5px; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 10px;
+  display: inline-block; font-size: 11px; font-weight: 700; padding: 3px 10px;
+  border-radius: 6px; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 10px;
 }
 .tag-sun { background: var(--sun-soft); color: var(--sun); }
 .tag-sky { background: var(--sky-soft); color: var(--sky); }
@@ -259,47 +343,83 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
 .tag-violet { background: var(--violet-soft); color: var(--violet); }
 .tag-coral { background: var(--coral-soft); color: var(--coral); }
 .tag-gold { background: var(--gold-soft); color: var(--gold); }
+.tag-pink { background: var(--pink-soft); color: var(--pink); }
 .resource-desc { font-size: 14px; color: var(--text-mid); line-height: 1.5; margin-bottom: 14px; }
 .resource-contact { display: flex; flex-direction: column; gap: 4px; }
-.phone { font-size: 17px; font-weight: 800; color: var(--sun); font-variant-numeric: tabular-nums; letter-spacing: 0.01em; }
+.phone { font-size: 17px; font-weight: 800; color: var(--sun); font-variant-numeric: tabular-nums; }
 .phone a { color: var(--sun); font-weight: 800; }
 .address { font-size: 14px; color: var(--text-mid); font-style: normal; font-weight: 600; }
 .web { font-size: 14px; font-weight: 600; }
 .web a { font-weight: 600; }
 
+/* Quick Access */
 .quick-access {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 12px; padding: 24px 0;
 }
 .quick-card {
-  background: var(--card); border: 1px solid var(--border-light);
+  background: var(--card); border: 2px solid var(--border-light);
   border-radius: var(--radius-sm); padding: 16px;
   display: flex; align-items: center; gap: 14px;
   cursor: pointer; transition: all var(--transition);
   text-decoration: none; color: inherit;
 }
-.quick-card:hover { border-color: var(--sun); box-shadow: var(--shadow-card); }
+.quick-card:hover { border-color: var(--sun); box-shadow: var(--shadow-card); transform: translateY(-1px); }
 .quick-card .qicon {
-  width: 40px; height: 40px; border-radius: 10px;
-  display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0;
+  width: 44px; height: 44px; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0;
 }
 .quick-card .qlabel { font-size: 14px; font-weight: 600; color: var(--text); }
 .quick-card .qsub { font-size: 12px; color: var(--text-light); }
 
+/* About Section */
+.about-section {
+  padding: 56px 0;
+  position: relative;
+  overflow: hidden;
+}
+.about-section::before {
+  content: ''; position: absolute; top: -30px; right: -30px;
+  width: 150px; height: 150px; border-radius: 50%;
+  background: var(--sun-soft); opacity: 0.5;
+}
+.about-section::after {
+  content: ''; position: absolute; bottom: -20px; left: -20px;
+  width: 100px; height: 100px; border-radius: 50%;
+  background: var(--sky-soft); opacity: 0.4;
+}
+.about-card {
+  background: var(--card); border: 2px solid var(--border-light);
+  border-radius: 20px; padding: 40px 36px;
+  max-width: 800px; margin: 0 auto;
+  position: relative; z-index: 1;
+  box-shadow: var(--shadow-card);
+}
+.about-card h2 { font-size: 24px; color: var(--sun); margin-bottom: 16px; text-align: center; }
+.about-card p { font-size: 16px; color: var(--text-mid); line-height: 1.7; margin-bottom: 14px; }
+.about-card .about-signature {
+  text-align: center; margin-top: 20px; font-size: 15px; font-weight: 700;
+  color: var(--sun); font-style: italic;
+}
+.about-icons {
+  display: flex; justify-content: center; gap: 16px; margin-bottom: 20px; font-size: 28px;
+}
+
+/* Municipio View */
 .municipio-view { display: none; padding: 32px 0; }
 .municipio-view.visible { display: block; }
 .municipio-search-wrap { max-width: 400px; margin: 0 0 24px; position: relative; }
 .municipio-search-wrap input {
   width: 100%; padding: 12px 16px 12px 42px;
-  background: var(--card); border: 1px solid var(--border);
+  background: var(--card); border: 2px solid var(--border);
   border-radius: var(--radius-sm); font-size: 15px; color: var(--text); outline: none; font-family: inherit;
 }
 .municipio-search-wrap input:focus { border-color: var(--sun); }
 .municipio-search-wrap .search-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); opacity: 0.4; }
 .municipio-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
 .municipio-btn {
-  background: var(--card); border: 1px solid var(--border-light);
+  background: var(--card); border: 2px solid var(--border-light);
   border-radius: var(--radius-sm); padding: 14px 16px;
   font-size: 15px; font-weight: 600; color: var(--text); cursor: pointer;
   transition: all var(--transition); text-align: left; font-family: inherit;
@@ -308,6 +428,7 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
 .municipio-detail { display: none; padding: 32px 0; }
 .municipio-detail.visible { display: block; }
 
+/* Disclaimer */
 .disclaimer {
   background: var(--bg-alt); border-radius: var(--radius); padding: 24px;
   margin: 40px 0; font-size: 14px; color: var(--text-mid); line-height: 1.65;
@@ -315,6 +436,7 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
 }
 .disclaimer strong { color: var(--text); }
 
+/* Footer */
 .footer {
   background: var(--text); color: rgba(255,255,255,0.65); padding: 40px 0;
   font-size: 14px; text-align: center; line-height: 1.7;
@@ -322,13 +444,16 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
 .footer strong { color: #fff; }
 .footer a { color: rgba(255,255,255,0.8); }
 
+/* Responsive */
 @media (max-width: 700px) {
   .cat-grid { grid-template-columns: 1fr; }
   .resource-grid { grid-template-columns: 1fr; }
   .municipio-grid { grid-template-columns: repeat(2, 1fr); }
-  .hero { padding: 40px 0 36px; }
+  .hero { padding: 48px 0 40px; }
   .hero h1 { font-size: 24px; }
   .quick-access { grid-template-columns: 1fr 1fr; }
+  .hero .shape { display: none; }
+  .about-card { padding: 28px 22px; }
 }
 
 [id] { scroll-margin-top: 70px; }
@@ -336,14 +461,14 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
 
 .font-btn {
   background: var(--bg-alt); border: 1px solid var(--border); color: var(--text);
-  border-radius: 6px; padding: 4px 10px; font-size: 14px; font-weight: 700;
+  border-radius: 8px; padding: 5px 12px; font-size: 14px; font-weight: 700;
   cursor: pointer; transition: var(--transition);
 }
 .font-btn:hover { background: var(--sun-soft); border-color: var(--sun); }
 
 .wa-share {
   display: inline-flex; align-items: center; gap: 5px;
-  background: #25D366; color: #fff; border: none; border-radius: 6px;
+  background: #25D366; color: #fff; border: none; border-radius: 8px;
   padding: 5px 10px; font-size: 13px; font-weight: 700; cursor: pointer;
   margin-top: 6px; transition: var(--transition);
 }
@@ -375,11 +500,19 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
   </div>
 </header>
 
-<!-- Hero -->
+<!-- Hero with floating geometric shapes -->
 <section class="hero" id="top">
+  <div class="shape shape-circle-1"></div>
+  <div class="shape shape-circle-2"></div>
+  <div class="shape shape-triangle-1"></div>
+  <div class="shape shape-triangle-2"></div>
+  <div class="shape shape-square-1"></div>
+  <div class="shape shape-star-1">&#x2B50;</div>
+  <div class="shape shape-dots"></div>
+  <div class="shape shape-ring"></div>
   <div class="container">
-    <h1>Recursos para ninos y jovenes con diversidad funcional</h1>
-    <p>Un directorio gratuito de terapias, escuelas, programas y servicios para familias de ninos y adolescentes con necesidades especiales en Puerto Rico. De una familia boricua que entiende, para la tuya.</p>
+    <h1>Recursos para niños y jóvenes con diversidad funcional &#x2600;</h1>
+    <p>Un directorio gratuito de terapias, escuelas, programas y servicios para familias de niños y adolescentes con necesidades especiales en Puerto Rico. De una familia boricua que entiende, para la tuya.</p>
     <div class="search-wrap">
       <svg class="search-icon" width="20" height="20" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
       <input type="text" id="globalSearch" placeholder="Buscar por nombre, servicio, terapia o municipio..." aria-label="Buscar recursos">
@@ -387,11 +520,18 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
   </div>
 </section>
 
+<!-- Wave divider -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1200 40" preserveAspectRatio="none" fill="var(--bg)">
+    <path d="M0,20 C200,40 400,0 600,20 C800,40 1000,0 1200,20 L1200,40 L0,40 Z"/>
+  </svg>
+</div>
+
 <!-- View Toggle -->
-<section style="padding: 28px 0 0;">
+<section style="padding: 20px 0 0;">
   <div class="container">
     <div class="view-toggle">
-      <button class="view-btn active" onclick="showView('categoria')" id="btnCat">Por Categoria</button>
+      <button class="view-btn active" onclick="showView('categoria')" id="btnCat">Por Categoría</button>
       <button class="view-btn" onclick="showView('municipio')" id="btnMuni">Por Municipio</button>
     </div>
   </div>
@@ -403,19 +543,19 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
     <div class="quick-access">
       <a class="quick-card" href="tel:18009818492">
         <div class="qicon" style="background:var(--sun-soft)">&#x1F4DE;</div>
-        <div><div class="qlabel">APNI — Orientacion a Padres</div><div class="qsub">1-800-981-8492</div></div>
+        <div><div class="qlabel">APNI — Orientación a Padres</div><div class="qsub">1-800-981-8492</div></div>
       </a>
       <a class="quick-card" href="tel:7877252333">
         <div class="qicon" style="background:var(--coral-soft)">&#x1F6E1;</div>
-        <div><div class="qlabel">DPI — Defensoria</div><div class="qsub">(787) 725-2333</div></div>
+        <div><div class="qlabel">DPI — Defensoría</div><div class="qsub">(787) 725-2333</div></div>
       </a>
       <a class="quick-card" href="tel:211">
         <div class="qicon" style="background:var(--sky-soft)">&#x1F4DE;</div>
-        <div><div class="qlabel">Llama al 2-1-1</div><div class="qsub">Informacion y referidos</div></div>
+        <div><div class="qlabel">Llama al 2-1-1</div><div class="qsub">Información y referidos</div></div>
       </a>
       <a class="quick-card" href="tel:7877592000">
         <div class="qicon" style="background:var(--green-soft)">&#x1F3EB;</div>
-        <div><div class="qlabel">Educacion Especial DEPR</div><div class="qsub">(787) 759-2000</div></div>
+        <div><div class="qlabel">Educación Especial DEPR</div><div class="qsub">(787) 759-2000</div></div>
       </a>
     </div>
   </div>
@@ -428,71 +568,71 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
 
       <div class="cat-card" onclick="showCategory('derechos')" tabindex="0" role="button">
         <div class="cat-icon" style="background:var(--gold-soft)">&#x2696;</div>
-        <h3>Derechos y Orientacion</h3>
-        <p>Defensoria, derechos bajo Ley IDEA y Ley 51, orientacion legal y capacitacion para padres.</p>
+        <h3>Derechos y Orientación</h3>
+        <p>Defensoría, derechos bajo Ley IDEA y Ley 51, orientación legal y capacitación para padres.</p>
         <span class="cat-count">6+ organizaciones</span>
       </div>
 
       <div class="cat-card" onclick="showCategory('temprana')" tabindex="0" role="button">
         <div class="cat-icon" style="background:var(--green-soft)">&#x1F476;</div>
-        <h3>Intervencion Temprana (0-3)</h3>
-        <p>Centros pediatricos, cernimiento, Avanzando Juntos y centros de autismo para diagnostico e intervencion.</p>
+        <h3>Intervención Temprana (0-3)</h3>
+        <p>Centros pediátricos, cernimiento, Avanzando Juntos y centros de autismo para diagnóstico e intervención.</p>
         <span class="cat-count">8+ centros</span>
       </div>
 
       <div class="cat-card" onclick="showCategory('educacion')" tabindex="0" role="button">
         <div class="cat-icon" style="background:var(--sky-soft)">&#x1F3EB;</div>
-        <h3>Educacion Especial</h3>
-        <p>Escuelas especializadas, colegios de educacion individualizada, CSEE y oficinas regionales del DEPR.</p>
+        <h3>Educación Especial</h3>
+        <p>Escuelas especializadas, colegios de educación individualizada, CSEE y oficinas regionales del DEPR.</p>
         <span class="cat-count">16+ escuelas</span>
       </div>
 
       <div class="cat-card" onclick="showCategory('terapias')" tabindex="0" role="button">
         <div class="cat-icon" style="background:var(--sun-soft)">&#x1FA7A;</div>
-        <h3>Terapias y Rehabilitacion</h3>
-        <p>Terapia fisica, ocupacional, del habla, psicologica, integracion sensorial y clinicas multidisciplinarias.</p>
-        <span class="cat-count">15+ clinicas</span>
+        <h3>Terapias y Rehabilitación</h3>
+        <p>Terapia física, ocupacional, del habla, psicológica, integración sensorial y clínicas multidisciplinarias.</p>
+        <span class="cat-count">15+ clínicas</span>
       </div>
 
       <div class="cat-card" onclick="showCategory('autismo')" tabindex="0" role="button">
         <div class="cat-icon" style="background:var(--violet-soft)">&#x1F9E9;</div>
         <h3>Autismo (TEA)</h3>
-        <p>Organizaciones, terapia ABA, centros de diagnostico, grupos de apoyo e investigacion clinica.</p>
+        <p>Organizaciones, terapia ABA, centros de diagnóstico, grupos de apoyo e investigación clínica.</p>
         <span class="cat-count">8+ organizaciones</span>
       </div>
 
       <div class="cat-card" onclick="showCategory('diagnosticos')" tabindex="0" role="button">
         <div class="cat-icon" style="background:var(--coral-soft)">&#x1F49C;</div>
-        <h3>Apoyo por Diagnostico</h3>
-        <p>Sindrome Down, distrofia muscular, espina bifida, paralisis cerebral, oncologia pediatrica y mas.</p>
+        <h3>Apoyo por Diagnóstico</h3>
+        <p>Síndrome Down, distrofia muscular, espina bífida, parálisis cerebral, oncología pediátrica y más.</p>
         <span class="cat-count">14+ fundaciones</span>
       </div>
 
       <div class="cat-card" onclick="showCategory('artes')" tabindex="0" role="button">
-        <div class="cat-icon" style="background:var(--sun-soft)">&#x1F3A8;</div>
-        <h3>Artes, Deportes y Recreacion</h3>
-        <p>Equinoterapia, musicoterapia, Special Olympics, surf terapeutico, deportes adaptados y artes circenses.</p>
+        <div class="cat-icon" style="background:var(--pink-soft)">&#x1F3A8;</div>
+        <h3>Artes, Deportes y Recreación</h3>
+        <p>Equinoterapia, musicoterapia, Special Olympics, surf terapéutico, deportes adaptados y artes circenses.</p>
         <span class="cat-count">12+ programas</span>
       </div>
 
       <div class="cat-card" onclick="showCategory('tecnologia')" tabindex="0" role="button">
         <div class="cat-icon" style="background:var(--sky-soft)">&#x1F4BB;</div>
-        <h3>Tecnologia Asistiva</h3>
-        <p>PRATP, equipos de comunicacion, sillas de ruedas, dispositivos adaptativos y prestamos de equipo.</p>
+        <h3>Tecnología Asistiva</h3>
+        <p>PRATP, equipos de comunicación, sillas de ruedas, dispositivos adaptativos y préstamos de equipo.</p>
         <span class="cat-count">3+ programas</span>
       </div>
 
       <div class="cat-card" onclick="showCategory('transicion')" tabindex="0" role="button">
         <div class="cat-icon" style="background:var(--green-soft)">&#x1F91D;</div>
-        <h3>Transicion y Vida Adulta</h3>
-        <p>Rehabilitacion vocacional, vivienda asistida, programas de empleo y vida independiente para jovenes 16+.</p>
+        <h3>Transición y Vida Adulta</h3>
+        <p>Rehabilitación vocacional, vivienda asistida, programas de empleo y vida independiente para jóvenes 16+.</p>
         <span class="cat-count">6+ programas</span>
       </div>
 
       <div class="cat-card" onclick="showCategory('familias')" tabindex="0" role="button">
         <div class="cat-icon" style="background:var(--violet-soft)">&#x1F46A;</div>
         <h3>Apoyo a Familias</h3>
-        <p>Grupos de apoyo, respiro, capacitacion para padres, referidos y programas gubernamentales.</p>
+        <p>Grupos de apoyo, respiro, capacitación para padres, referidos y programas gubernamentales.</p>
         <span class="cat-count">6+ recursos</span>
       </div>
 
@@ -509,17 +649,17 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
 
 <!-- ═══════════════ CATEGORY SECTIONS ═══════════════ -->
 
-<!-- DERECHOS Y ORIENTACION -->
+<!-- DERECHOS Y ORIENTACIÓN -->
 <div class="category-section" id="sec-derechos">
   <div class="container">
-    <button class="back-link" onclick="showCatGrid()">&#8592; Volver a categorias</button>
-    <h2>Derechos y Orientacion</h2>
-    <p class="section-desc">Organizaciones de defensoria, orientacion legal y capacitacion para padres sobre los derechos de ninos con discapacidades bajo Ley IDEA y Ley 51.</p>
+    <button class="back-link" onclick="showCatGrid()">&#8592; Volver a categorías</button>
+    <h2>Derechos y Orientación</h2>
+    <p class="section-desc">Organizaciones de defensoría, orientación legal y capacitación para padres sobre los derechos de niños con discapacidades bajo Ley IDEA y Ley 51.</p>
     <div class="resource-grid">
       <div class="resource-card" data-muni="san juan" data-cat="derechos">
         <span class="tag tag-gold">Gobierno</span>
-        <h4>Defensoria de las Personas con Impedimentos (DPI)</h4>
-        <p class="resource-desc">Agencia gubernamental que protege los derechos de personas con impedimentos. Atiende querellas de discriminacion y fiscaliza el cumplimiento de leyes de accesibilidad.</p>
+        <h4>Defensoría de las Personas con Impedimentos (DPI)</h4>
+        <p class="resource-desc">Agencia gubernamental que protege los derechos de personas con impedimentos. Atiende querellas de discriminación y fiscaliza el cumplimiento de leyes de accesibilidad.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877252333">(787) 725-2333</a> / VRS: <a href="tel:7875238910">(787) 523-8910</a></span>
           <address class="address">Centro Gubernamental Minillas, Torre Sur, Piso 2, Ofic. 203, Santurce</address>
@@ -528,18 +668,18 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       </div>
       <div class="resource-card" data-muni="san juan" data-cat="derechos">
         <span class="tag tag-sun">Padres</span>
-        <h4>APNI — Asociacion de Padres Pro-Bienestar de Ninos con Impedimentos</h4>
-        <p class="resource-desc">Centro de Capacitacion e Informacion para Padres (PTI). Orientacion sobre IDEA, PEI, evaluaciones, derechos educativos. Fundada en 1977.</p>
+        <h4>APNI — Asociación de Padres Pro-Bienestar de Niños con Impedimentos</h4>
+        <p class="resource-desc">Centro de Capacitación e Información para Padres (PTI). Orientación sobre IDEA, PEI, evaluaciones y derechos educativos. Fundada en 1977.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877634665">(787) 763-4665</a> / <a href="tel:7872504552">(787) 250-4552</a> / <a href="tel:18009818492">1-800-981-8492</a></span>
-          <address class="address">724 Ave. Ponce de Leon, San Juan PR 00918</address>
+          <address class="address">724 Ave. Ponce de León, San Juan PR 00918</address>
           <span class="web"><a href="https://apnipr.org" target="_blank" rel="noopener">apnipr.org</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="san juan" data-cat="derechos">
         <span class="tag tag-green">Vida Independiente</span>
         <h4>MAVI — Movimiento para el Alcance de Vida Independiente</h4>
-        <p class="resource-desc">Promueve que la discapacidad no limite la participacion social. Aboga por accesibilidad y derechos civiles de personas con impedimentos.</p>
+        <p class="resource-desc">Promueve que la discapacidad no limite la participación social. Aboga por accesibilidad y derechos civiles de personas con impedimentos.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877587901">(787) 758-7901</a></span>
           <address class="address">Hato Rey, San Juan</address>
@@ -548,16 +688,16 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       </div>
       <div class="resource-card" data-muni="san juan" data-cat="derechos">
         <span class="tag tag-gold">Legal</span>
-        <h4>Comision Educacion Sin Barreras — Colegio de Abogados</h4>
-        <p class="resource-desc">Asesoria legal sobre educacion especial a traves del Colegio de Abogados de Puerto Rico.</p>
+        <h4>Comisión Educación Sin Barreras — Colegio de Abogados</h4>
+        <p class="resource-desc">Asesoría legal sobre educación especial a través del Colegio de Abogados de Puerto Rico.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877213358">(787) 721-3358</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="san juan" data-cat="derechos">
-        <span class="tag tag-green">Politica Publica</span>
+        <span class="tag tag-green">Política Pública</span>
         <h4>CEVI — Consejo Estatal de Vida Independiente</h4>
-        <p class="resource-desc">Promueve politica publica para la vida independiente de personas con impedimentos en Puerto Rico.</p>
+        <p class="resource-desc">Promueve política pública para la vida independiente de personas con impedimentos en Puerto Rico.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877200160">(787) 720-0160</a></span>
         </div>
@@ -565,7 +705,7 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       <div class="resource-card" data-muni="toda la isla" data-cat="derechos">
         <span class="tag tag-sky">Legal Gratis</span>
         <h4>Servicios Legales de Puerto Rico</h4>
-        <p class="resource-desc">Representacion legal gratuita incluyendo defensoria de educacion especial, cumplimiento de IDEA y Ley 51.</p>
+        <p class="resource-desc">Representación legal gratuita incluyendo defensoría de educación especial, cumplimiento de IDEA y Ley 51.</p>
         <div class="resource-contact">
           <span class="web"><a href="https://www.servicioslegales.org" target="_blank" rel="noopener">servicioslegales.org</a></span>
         </div>
@@ -574,50 +714,50 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
   </div>
 </div>
 
-<!-- INTERVENCION TEMPRANA -->
+<!-- INTERVENCIÓN TEMPRANA -->
 <div class="category-section" id="sec-temprana">
   <div class="container">
-    <button class="back-link" onclick="showCatGrid()">&#8592; Volver a categorias</button>
-    <h2>Intervencion Temprana (0-3 anos)</h2>
-    <p class="section-desc">Centros pediatricos regionales del Departamento de Salud, cernimiento de desarrollo y el programa Avanzando Juntos para infantes de 0 a 3 anos.</p>
+    <button class="back-link" onclick="showCatGrid()">&#8592; Volver a categorías</button>
+    <h2>Intervención Temprana (0-3 años)</h2>
+    <p class="section-desc">Centros pediátricos regionales del Departamento de Salud, cernimiento de desarrollo y el programa Avanzando Juntos para infantes de 0 a 3 años.</p>
     <div class="resource-grid">
       <div class="resource-card" data-muni="toda la isla" data-cat="temprana">
         <span class="tag tag-green">Gobierno — 0-3</span>
-        <h4>Avanzando Juntos — Intervencion Temprana</h4>
-        <p class="resource-desc">Programa del Depto. de Salud para ninos 0-3 con retrasos en el desarrollo. Terapia del habla, fisica y ocupacional en ambientes naturales. Multidisciplinario.</p>
+        <h4>Avanzando Juntos — Intervención Temprana</h4>
+        <p class="resource-desc">Programa del Depto. de Salud para niños 0-3 con retrasos en el desarrollo. Terapia del habla, física y ocupacional en ambientes naturales. Multidisciplinario.</p>
         <div class="resource-contact">
           <span class="web"><a href="https://avanzandojuntos.salud.pr.gov" target="_blank" rel="noopener">avanzandojuntos.salud.pr.gov</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="san juan" data-cat="temprana">
-        <span class="tag tag-sky">Centro Medico</span>
-        <h4>Centro Pediatrico Metropolitano</h4>
-        <p class="resource-desc">Hospital Pediatrico en Centro Medico. Equipo transdisciplinario para evaluaciones de desarrollo motor, habla e interaccion social.</p>
+        <span class="tag tag-sky">Centro Médico</span>
+        <h4>Centro Pediátrico Metropolitano</h4>
+        <p class="resource-desc">Hospital Pediátrico en Centro Médico. Equipo transdisciplinario para evaluaciones de desarrollo motor, habla e interacción social.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877652929">(787) 765-2929</a></span>
-          <address class="address">Centro Medico, San Juan</address>
+          <address class="address">Centro Médico, San Juan</address>
           <span class="web"><a href="https://hopu.pr.gov" target="_blank" rel="noopener">hopu.pr.gov</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="bayamon" data-cat="temprana">
         <span class="tag tag-sky">Regional</span>
-        <h4>Centro Pediatrico Bayamon</h4>
-        <p class="resource-desc">Hospital Universitario Ramon Ruiz Arnau. Sirve Bayamon, Catano, Toa Baja, Toa Alta, Dorado y Naranjito.</p>
+        <h4>Centro Pediátrico Bayamón</h4>
+        <p class="resource-desc">Hospital Universitario Ramón Ruiz Arnau. Sirve Bayamón, Cataño, Toa Baja, Toa Alta, Dorado y Naranjito.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877652929">(787) 765-2929</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="arecibo" data-cat="temprana">
         <span class="tag tag-sky">Regional</span>
-        <h4>Centro Pediatrico Arecibo</h4>
-        <p class="resource-desc">Sirve Arecibo, Camuy, Hatillo, Quebradillas, Manati y Barceloneta.</p>
+        <h4>Centro Pediátrico Arecibo</h4>
+        <p class="resource-desc">Sirve Arecibo, Camuy, Hatillo, Quebradillas, Manatí y Barceloneta.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7878171245">(787) 817-1245</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="caguas" data-cat="temprana">
         <span class="tag tag-sky">Regional</span>
-        <h4>Centro Pediatrico Caguas</h4>
+        <h4>Centro Pediátrico Caguas</h4>
         <p class="resource-desc">Anexo Hospital Menonita. Sirve Caguas, Cayey, Cidra, Gurabo, San Lorenzo y Humacao.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877047102">(787) 704-7102</a></span>
@@ -625,54 +765,54 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       </div>
       <div class="resource-card" data-muni="ponce" data-cat="temprana">
         <span class="tag tag-sky">Regional</span>
-        <h4>Centro Pediatrico Ponce</h4>
-        <p class="resource-desc">Terrenos Hospital San Lucas. Sirve Ponce, Yauco, Guayanilla, Penuelas, Juana Diaz y Coamo.</p>
+        <h4>Centro Pediátrico Ponce</h4>
+        <p class="resource-desc">Terrenos Hospital San Lucas. Sirve Ponce, Yauco, Guayanilla, Peñuelas, Juana Díaz y Coamo.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7872842900">(787) 284-2900</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="fajardo" data-cat="temprana">
         <span class="tag tag-sky">Regional</span>
-        <h4>Centro Pediatrico Fajardo</h4>
-        <p class="resource-desc">Sirve Fajardo, Luquillo, Rio Grande, Ceiba, Vieques y Culebra.</p>
+        <h4>Centro Pediátrico Fajardo</h4>
+        <p class="resource-desc">Sirve Fajardo, Luquillo, Río Grande, Ceiba, Vieques y Culebra.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7878011109">(787) 801-1109</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="san juan" data-cat="temprana">
         <span class="tag tag-violet">Autismo 0-3</span>
-        <h4>Centro de Autismo — Recinto Ciencias Medicas</h4>
-        <p class="resource-desc">Evaluaciones estandarizadas de TEA para ninos de 0 a 3 anos. Prerequisito para acceder a terapias especializadas.</p>
+        <h4>Centro de Autismo — Recinto Ciencias Médicas</h4>
+        <p class="resource-desc">Evaluaciones estandarizadas de TEA para niños de 0 a 3 años. Prerrequisito para acceder a terapias especializadas.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7875226311">(787) 522-6311</a></span>
-          <address class="address">Recinto de Ciencias Medicas, UPR, San Juan</address>
+          <address class="address">Recinto de Ciencias Médicas, UPR, San Juan</address>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- EDUCACION ESPECIAL -->
+<!-- EDUCACIÓN ESPECIAL -->
 <div class="category-section" id="sec-educacion">
   <div class="container">
-    <button class="back-link" onclick="showCatGrid()">&#8592; Volver a categorias</button>
-    <h2>Educacion Especial</h2>
-    <p class="section-desc">Escuelas especializadas privadas, colegios de educacion individualizada y Centros de Servicios de Educacion Especial (CSEE) del Departamento de Educacion.</p>
+    <button class="back-link" onclick="showCatGrid()">&#8592; Volver a categorías</button>
+    <h2>Educación Especial</h2>
+    <p class="section-desc">Escuelas especializadas privadas, colegios de educación individualizada y Centros de Servicios de Educación Especial (CSEE) del Departamento de Educación.</p>
     <div class="resource-grid">
       <div class="resource-card" data-muni="san juan" data-cat="educacion">
         <span class="tag tag-sun">Escuela</span>
-        <h4>CODERI — Colegio de Educacion Especial y Rehabilitacion Integral</h4>
-        <p class="resource-desc">Discapacidad intelectual y autismo. Enfoque en autonomia, vida independiente y transicion a la vida adulta. Natacion, terapia vocacional.</p>
+        <h4>CODERI — Colegio de Educación Especial y Rehabilitación Integral</h4>
+        <p class="resource-desc">Discapacidad intelectual y autismo. Enfoque en autonomía, vida independiente y transición a la vida adulta. Natación, terapia vocacional.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877656147">(787) 765-6147</a></span>
-          <address class="address">Rio Piedras, San Juan</address>
+          <address class="address">Río Piedras, San Juan</address>
           <span class="web"><a href="https://coderipr.com" target="_blank" rel="noopener">coderipr.com</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="san juan" data-cat="educacion">
         <span class="tag tag-sun">Escuela</span>
-        <h4>Colegio IMEI — Instituto Modelo de Ensenanza Individualizada</h4>
-        <p class="resource-desc">Filosofia de inclusion inversa. Estudiantes de educacion especial interactuan con corriente regular bajo curriculo adaptado.</p>
+        <h4>Colegio IMEI — Instituto Modelo de Enseñanza Individualizada</h4>
+        <p class="resource-desc">Filosofía de inclusión inversa. Estudiantes de educación especial interactúan con corriente regular bajo currículo adaptado.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877580535">(787) 758-0535</a></span>
           <span class="web"><a href="https://imeipr.org" target="_blank" rel="noopener">imeipr.org</a></span>
@@ -681,7 +821,7 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       <div class="resource-card" data-muni="san juan" data-cat="educacion">
         <span class="tag tag-sun">Escuela</span>
         <h4>Colegio San Gabriel — Para Sordos</h4>
-        <p class="resource-desc">Institucion historica para poblacion sorda o con problemas de audicion profundos. Lenguaje de senas y cultura sorda.</p>
+        <p class="resource-desc">Institución histórica para población sorda o con problemas de audición profundos. Lenguaje de señas y cultura sorda.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877833455">(787) 783-3455</a></span>
           <address class="address">Puerto Nuevo, San Juan</address>
@@ -690,8 +830,8 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       </div>
       <div class="resource-card" data-muni="san juan" data-cat="educacion">
         <span class="tag tag-sun">Escuela</span>
-        <h4>Centro de Aprendizaje del Nino (CAN)</h4>
-        <p class="resource-desc">Hospital del Nino. Preescolar a elemental. Autismo, lenguaje y desarrollo temprano.</p>
+        <h4>Centro de Aprendizaje del Niño (CAN)</h4>
+        <p class="resource-desc">Hospital del Niño. Preescolar a elemental. Autismo, lenguaje y desarrollo temprano.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877832226">(787) 783-2226</a></span>
           <span class="web"><a href="https://hdnpuertorico.org" target="_blank" rel="noopener">hdnpuertorico.org</a></span>
@@ -700,7 +840,7 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       <div class="resource-card" data-muni="guaynabo" data-cat="educacion">
         <span class="tag tag-sun">Escuela</span>
         <h4>Colegio Mercedes Morales</h4>
-        <p class="resource-desc">Educacion especial integral en Guaynabo.</p>
+        <p class="resource-desc">Educación especial integral en Guaynabo.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877832405">(787) 783-2405</a></span>
           <address class="address">Guaynabo, PR</address>
@@ -708,8 +848,8 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       </div>
       <div class="resource-card" data-muni="caguas" data-cat="educacion">
         <span class="tag tag-sun">Escuela</span>
-        <h4>Colegio de Integracion PEI (CIPEI)</h4>
-        <p class="resource-desc">Pre-K a 12do grado. Grupos pequenos, educacion sensible y personalizada.</p>
+        <h4>Colegio de Integración PEI (CIPEI)</h4>
+        <p class="resource-desc">Pre-K a 12mo grado. Grupos pequeños, educación sensible y personalizada.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7873341767">(787) 334-1767</a></span>
           <address class="address">Caguas, PR</address>
@@ -728,24 +868,24 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       <div class="resource-card" data-muni="mayaguez" data-cat="educacion">
         <span class="tag tag-sun">Escuela</span>
         <h4>LS Academy</h4>
-        <p class="resource-desc">Alternativa educativa. Habilidades para la vida diaria, socializacion e insercion social y laboral.</p>
+        <p class="resource-desc">Alternativa educativa. Habilidades para la vida diaria, socialización e inserción social y laboral.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877050896">(787) 705-0896</a></span>
-          <address class="address">Mayaguez, PR</address>
+          <address class="address">Mayagüez, PR</address>
           <span class="web"><a href="https://lseducationcenter.com/ls-academy" target="_blank" rel="noopener">lseducationcenter.com</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="toda la isla" data-cat="educacion" style="border-left: 4px solid var(--sky);">
         <span class="tag tag-sky">Gobierno</span>
-        <h4>CSEE — Centros de Servicios de Educacion Especial (DEPR)</h4>
-        <p class="resource-desc">Oficinas regionales del Departamento de Educacion que canalizan evaluaciones, terapias escolares y formulacion del PEI.</p>
+        <h4>CSEE — Centros de Servicios de Educación Especial (DEPR)</h4>
+        <p class="resource-desc">Oficinas regionales del Departamento de Educación que canalizan evaluaciones, terapias escolares y formulación del PEI.</p>
         <div class="resource-contact">
           <span class="phone" style="font-size:14px;">
             San Juan <a href="tel:7877736206">(787) 773-6206</a><br>
-            Bayamon <a href="tel:7877806444">(787) 780-6444</a><br>
+            Bayamón <a href="tel:7877806444">(787) 780-6444</a><br>
             Caguas <a href="tel:7876532585">(787) 653-2585</a><br>
             Ponce <a href="tel:7876511121">(787) 651-1121</a><br>
-            Mayaguez <a href="tel:7878055020">(787) 805-5020</a><br>
+            Mayagüez <a href="tel:7878055020">(787) 805-5020</a><br>
             Arecibo <a href="tel:7878173393">(787) 817-3393</a><br>
             Fajardo <a href="tel:7878603228">(787) 860-3228</a><br>
             Aguada <a href="tel:7878680565">(787) 868-0565</a><br>
@@ -760,14 +900,14 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
 <!-- TERAPIAS -->
 <div class="category-section" id="sec-terapias">
   <div class="container">
-    <button class="back-link" onclick="showCatGrid()">&#8592; Volver a categorias</button>
-    <h2>Terapias y Rehabilitacion</h2>
-    <p class="section-desc">Clinicas multidisciplinarias de terapia fisica, ocupacional, del habla, psicologica, integracion sensorial y rehabilitacion pediatrica.</p>
+    <button class="back-link" onclick="showCatGrid()">&#8592; Volver a categorías</button>
+    <h2>Terapias y Rehabilitación</h2>
+    <p class="section-desc">Clínicas multidisciplinarias de terapia física, ocupacional, del habla, psicológica, integración sensorial y rehabilitación pediátrica.</p>
     <div class="resource-grid">
       <div class="resource-card" data-muni="san juan" data-cat="terapias">
         <span class="tag tag-sun">Multidisciplinaria</span>
-        <h4>Sociedad Pro Hospital del Nino</h4>
-        <p class="resource-desc">Terapia fisica, ocupacional, del habla, psicologica y disfagia. Cuartos de integracion sensorial Snoezelen. Robotica adaptada.</p>
+        <h4>Sociedad Pro Hospital del Niño</h4>
+        <p class="resource-desc">Terapia física, ocupacional, del habla, psicológica y disfagia. Cuartos de integración sensorial Snoezelen. Robótica adaptada.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877832226">(787) 783-2226</a></span>
           <address class="address">San Juan / Guaynabo</address>
@@ -777,43 +917,43 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       <div class="resource-card" data-muni="san juan" data-cat="terapias">
         <span class="tag tag-sun">Multidisciplinaria</span>
         <h4>SER de Puerto Rico</h4>
-        <p class="resource-desc">Rehabilitacion integral, educacion y apoyo para discapacidades fisicas y TEA. Sedes en San Juan, Ponce y Ceiba.</p>
+        <p class="resource-desc">Rehabilitación integral, educación y apoyo para discapacidades físicas y TEA. Sedes en San Juan, Ponce y Ceiba.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877676710">(787) 767-6710</a></span>
           <span class="web"><a href="https://ser.pr" target="_blank" rel="noopener">ser.pr</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="san juan" data-cat="terapias">
-        <span class="tag tag-sky">Clinica</span>
+        <span class="tag tag-sky">Clínica</span>
         <h4>Bright Brains Therapy Center</h4>
-        <p class="resource-desc">Terapia fisica, ocupacional sensorial, del habla y psicologica para ninos.</p>
+        <p class="resource-desc">Terapia física, ocupacional sensorial, del habla y psicológica para niños.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7879988866">(787) 998-8866</a></span>
           <span class="web"><a href="https://brightbrainspr.com" target="_blank" rel="noopener">brightbrainspr.com</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="guaynabo" data-cat="terapias">
-        <span class="tag tag-sky">Clinica</span>
-        <h4>Clinica Explora</h4>
-        <p class="resource-desc">Habla, ocupacional, fisica, psicologica y educativa en Guaynabo.</p>
+        <span class="tag tag-sky">Clínica</span>
+        <h4>Clínica Explora</h4>
+        <p class="resource-desc">Habla, ocupacional, física, psicológica y educativa en Guaynabo.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7876405680">(787) 640-5680</a></span>
           <address class="address">Guaynabo, PR</address>
         </div>
       </div>
       <div class="resource-card" data-muni="caguas" data-cat="terapias">
-        <span class="tag tag-sky">Clinica</span>
+        <span class="tag tag-sky">Clínica</span>
         <h4>Centro Tomatis Puerto Rico</h4>
-        <p class="resource-desc">Metodo Tomatis, integracion sensorial, terapia del habla y lenguaje, programas de lectoescritura. Desde 2004.</p>
+        <p class="resource-desc">Método Tomatis, integración sensorial, terapia del habla y lenguaje, programas de lectoescritura. Desde 2004.</p>
         <div class="resource-contact">
           <address class="address">Caguas, PR</address>
           <span class="web"><a href="https://tomatispr.com" target="_blank" rel="noopener">tomatispr.com</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="manati" data-cat="terapias">
-        <span class="tag tag-sky">Clinica</span>
-        <h4>Clinica Terapeutica para el Desarrollo del Nino</h4>
-        <p class="resource-desc">Habla, ocupacional, educativa y disfagia en Manati.</p>
+        <span class="tag tag-sky">Clínica</span>
+        <h4>Clínica Terapéutica para el Desarrollo del Niño</h4>
+        <p class="resource-desc">Habla, ocupacional, educativa y disfagia en Manatí.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7872920903">(787) 292-0903</a></span>
           <span class="web"><a href="https://clinicaterapeuticapr.com" target="_blank" rel="noopener">clinicaterapeuticapr.com</a></span>
@@ -822,7 +962,7 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       <div class="resource-card" data-muni="quebradillas" data-cat="terapias">
         <span class="tag tag-green">Multisede</span>
         <h4>LG Therapy Group</h4>
-        <p class="resource-desc">Terapia fisica, habla, ocupacional y gimnasio sensorial. Sedes en Quebradillas, Camuy, Hatillo, Barceloneta, Manati y Vega Baja.</p>
+        <p class="resource-desc">Terapia física, habla, ocupacional y gimnasio sensorial. Sedes en Quebradillas, Camuy, Hatillo, Barceloneta, Manatí y Vega Baja.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7879153000">(787) 915-3000</a></span>
           <span class="web"><a href="https://terapiapr.com" target="_blank" rel="noopener">terapiapr.com</a></span>
@@ -831,34 +971,34 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       <div class="resource-card" data-muni="moca" data-cat="terapias">
         <span class="tag tag-green">Multisede</span>
         <h4>Centro AYANI, Inc.</h4>
-        <p class="resource-desc">Terapia fisica, habla, ocupacional e intelectual. Sedes en Moca, Aguadilla y Camuy.</p>
+        <p class="resource-desc">Terapia física, habla, ocupacional e intelectual. Sedes en Moca, Aguadilla y Camuy.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7878774213">(787) 877-4213</a></span>
           <span class="web"><a href="https://centroayani.org" target="_blank" rel="noopener">centroayani.org</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="mayaguez" data-cat="terapias">
-        <span class="tag tag-sky">Clinica</span>
+        <span class="tag tag-sky">Clínica</span>
         <h4>Centro Espibi</h4>
-        <p class="resource-desc">Terapia especializada y desarrollo del nino en Mayaguez.</p>
+        <p class="resource-desc">Terapia especializada y desarrollo del niño en Mayagüez.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7878347991">(787) 834-7991</a></span>
           <span class="web"><a href="https://centroespibi.com" target="_blank" rel="noopener">centroespibi.com</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="cidra" data-cat="terapias">
-        <span class="tag tag-sky">Clinica</span>
+        <span class="tag tag-sky">Clínica</span>
         <h4>Centro Margarita</h4>
-        <p class="resource-desc">Terapia fisica, ocupacional, habla y preescolar adaptado en la zona central.</p>
+        <p class="resource-desc">Terapia física, ocupacional, habla y preescolar adaptado en la zona central.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877396030">(787) 739-6030</a></span>
           <span class="web"><a href="https://centromargarita.com" target="_blank" rel="noopener">centromargarita.com</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="ponce" data-cat="terapias">
-        <span class="tag tag-sky">Clinica</span>
+        <span class="tag tag-sky">Clínica</span>
         <h4>Centro de Terapia Amor</h4>
-        <p class="resource-desc">Ocupacional, habla, fisica y psicologica en Ponce.</p>
+        <p class="resource-desc">Ocupacional, habla, física y psicológica en Ponce.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7872593398">(787) 259-3398</a></span>
           <span class="web"><a href="https://centrodeterapiaamor.com" target="_blank" rel="noopener">centrodeterapiaamor.com</a></span>
@@ -866,34 +1006,34 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       </div>
       <div class="resource-card" data-muni="caguas" data-cat="terapias">
         <span class="tag tag-violet">Neuro</span>
-        <h4>Neuronita — Clinica de Rehabilitacion Neuro-Cognitiva</h4>
-        <p class="resource-desc">Psicometrica, habla y psicologica en Caguas.</p>
+        <h4>Neuronita — Clínica de Rehabilitación Neuro-Cognitiva</h4>
+        <p class="resource-desc">Psicométrica, habla y psicológica en Caguas.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7874074814">(787) 407-4814</a></span>
           <span class="web"><a href="https://neuronitapr.com" target="_blank" rel="noopener">neuronitapr.com</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="caguas" data-cat="terapias">
-        <span class="tag tag-violet">Psicologia</span>
-        <h4>Happy Brains Servicios Psicologicos</h4>
-        <p class="resource-desc">Psicologia infantil, autismo y evaluaciones en Caguas.</p>
+        <span class="tag tag-violet">Psicología</span>
+        <h4>Happy Brains Servicios Psicológicos</h4>
+        <p class="resource-desc">Psicología infantil, autismo y evaluaciones en Caguas.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7879004981">(787) 900-4981</a></span>
           <span class="web"><a href="https://happybrainspr.com" target="_blank" rel="noopener">happybrainspr.com</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="caguas" data-cat="terapias">
-        <span class="tag tag-violet">Psicologia</span>
+        <span class="tag tag-violet">Psicología</span>
         <h4>Psy-Q Group</h4>
-        <p class="resource-desc">Servicios psicologicos y evaluaciones cognitivas en Caguas.</p>
+        <p class="resource-desc">Servicios psicológicos y evaluaciones cognitivas en Caguas.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877055565">(787) 705-5565</a></span>
           <span class="web"><a href="https://psy-qgroup.com" target="_blank" rel="noopener">psy-qgroup.com</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="caguas" data-cat="terapias">
-        <span class="tag tag-sky">Clinica</span>
-        <h4>CIDEN — Centro Interdisciplinario para el Desarrollo de la Ninez</h4>
+        <span class="tag tag-sky">Clínica</span>
+        <h4>CIDEN — Centro Interdisciplinario para el Desarrollo de la Niñez</h4>
         <p class="resource-desc">Habla, ocupacional, ABA y educativa en Caguas.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7874667747">(787) 466-7747</a></span>
@@ -906,14 +1046,14 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
 <!-- AUTISMO -->
 <div class="category-section" id="sec-autismo">
   <div class="container">
-    <button class="back-link" onclick="showCatGrid()">&#8592; Volver a categorias</button>
+    <button class="back-link" onclick="showCatGrid()">&#8592; Volver a categorías</button>
     <h2>Autismo (TEA)</h2>
-    <p class="section-desc">Organizaciones especializadas en Trastorno del Espectro Autista, terapia ABA, diagnostico, investigacion y apoyo a familias.</p>
+    <p class="section-desc">Organizaciones especializadas en Trastorno del Espectro Autista, terapia ABA, diagnóstico, investigación y apoyo a familias.</p>
     <div class="resource-grid">
       <div class="resource-card" data-muni="san juan" data-cat="autismo">
         <span class="tag tag-violet">Toda la Isla</span>
         <h4>Alianza de Autismo de Puerto Rico</h4>
-        <p class="resource-desc">Defensa, educacion y grupos de apoyo en San Juan, Caguas, Ponce, Mayaguez, Isabela y Arecibo. Fundada 2004.</p>
+        <p class="resource-desc">Defensa, educación y grupos de apoyo en San Juan, Caguas, Ponce, Mayagüez, Isabela y Arecibo. Fundada 2004.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7876472718">(787) 647-2718</a> / <a href="tel:7876462656">(787) 646-2656</a></span>
           <address class="address">X-10 Calle Eternidades, Villas de Cupey, San Juan PR 00926</address>
@@ -923,16 +1063,16 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       <div class="resource-card" data-muni="orocovis" data-cat="autismo">
         <span class="tag tag-violet">ONG</span>
         <h4>Autism Society of Puerto Rico</h4>
-        <p class="resource-desc">Concientizacion, educacion y apoyo para familias con autismo.</p>
+        <p class="resource-desc">Concientización, educación y apoyo para familias con autismo.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:9392237640">(939) 223-7640</a> / <a href="tel:7872062793">(787) 206-2793</a></span>
           <span class="web"><a href="https://autismsocietypr.org" target="_blank" rel="noopener">autismsocietypr.org</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="ponce" data-cat="autismo">
-        <span class="tag tag-violet">Clinica</span>
-        <h4>CEPA — Centro Ponceno de Autismo</h4>
-        <p class="resource-desc">Evaluacion, diagnostico, intervencion, adiestramiento vocacional e investigacion clinica para TEA.</p>
+        <span class="tag tag-violet">Clínica</span>
+        <h4>CEPA — Centro Ponceño de Autismo</h4>
+        <p class="resource-desc">Evaluación, diagnóstico, intervención, adiestramiento vocacional e investigación clínica para TEA.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7872842900">(787) 284-2900</a></span>
           <address class="address">Calle Sol #120, Ponce PR 00730</address>
@@ -942,7 +1082,7 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       <div class="resource-card" data-muni="toda la isla" data-cat="autismo">
         <span class="tag tag-sun">ABA</span>
         <h4>ABA Centers of Puerto Rico</h4>
-        <p class="resource-desc">Terapia ABA (Analisis Conductual Aplicado) a domicilio y en clinica para ninos y adolescentes con autismo.</p>
+        <p class="resource-desc">Terapia ABA (Análisis Conductual Aplicado) a domicilio y en clínica para niños y adolescentes con autismo.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:18777349222">1-877-734-9222</a></span>
           <span class="web"><a href="https://abacenterspr.com" target="_blank" rel="noopener">abacenterspr.com</a></span>
@@ -950,8 +1090,8 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       </div>
       <div class="resource-card" data-muni="toda la isla" data-cat="autismo">
         <span class="tag tag-sun">Comunidad</span>
-        <h4>Corazon Azul, Inc.</h4>
-        <p class="resource-desc">Integracion y recreacion para personas con autismo y sus familias.</p>
+        <h4>Corazón Azul, Inc.</h4>
+        <p class="resource-desc">Integración y recreación para personas con autismo y sus familias.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7876625554">(787) 662-5554</a></span>
         </div>
@@ -968,17 +1108,17 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
   </div>
 </div>
 
-<!-- APOYO POR DIAGNOSTICO -->
+<!-- APOYO POR DIAGNÓSTICO -->
 <div class="category-section" id="sec-diagnosticos">
   <div class="container">
-    <button class="back-link" onclick="showCatGrid()">&#8592; Volver a categorias</button>
-    <h2>Apoyo por Diagnostico</h2>
-    <p class="section-desc">Fundaciones y organizaciones especializadas por condicion: Sindrome Down, distrofia muscular, espina bifida, paralisis cerebral, ceguera, cancer pediatrico y mas.</p>
+    <button class="back-link" onclick="showCatGrid()">&#8592; Volver a categorías</button>
+    <h2>Apoyo por Diagnóstico</h2>
+    <p class="section-desc">Fundaciones y organizaciones especializadas por condición: Síndrome Down, distrofia muscular, espina bífida, parálisis cerebral, ceguera, cáncer pediátrico y más.</p>
     <div class="resource-grid">
       <div class="resource-card" data-muni="san juan" data-cat="diagnosticos">
-        <span class="tag tag-coral">Sindrome Down</span>
-        <h4>Fundacion Puertorriquena Sindrome Down</h4>
-        <p class="resource-desc">Programas desde la infancia hasta integracion laboral. Adiestramiento continuo.</p>
+        <span class="tag tag-coral">Síndrome Down</span>
+        <h4>Fundación Puertorriqueña Síndrome Down</h4>
+        <p class="resource-desc">Programas desde la infancia hasta integración laboral. Adiestramiento continuo.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7872838210">(787) 283-8210</a></span>
           <address class="address">1600 Calle Santa Rosa, Urb. Altamesa, San Juan PR 00921</address>
@@ -987,68 +1127,68 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       </div>
       <div class="resource-card" data-muni="san juan" data-cat="diagnosticos">
         <span class="tag tag-coral">Distrofia Muscular</span>
-        <h4>MDA — Asociacion de la Distrofia Muscular</h4>
-        <p class="resource-desc">Apoyo, equipos, reparaciones y acceso a clinicas para pacientes con distrofia muscular.</p>
+        <h4>MDA — Asociación de la Distrofia Muscular</h4>
+        <p class="resource-desc">Apoyo, equipos, reparaciones y acceso a clínicas para pacientes con distrofia muscular.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877514088">(787) 751-4088</a></span>
           <span class="web"><a href="https://prmda.org" target="_blank" rel="noopener">prmda.org</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="bayamon" data-cat="diagnosticos">
-        <span class="tag tag-coral">Espina Bifida</span>
-        <h4>Asociacion de Espina Bifida e Hidrocefalia de PR</h4>
-        <p class="resource-desc">Prevencion, asistencia y apoyo para personas con espina bifida e hidrocefalia.</p>
+        <span class="tag tag-coral">Espina Bífida</span>
+        <h4>Asociación de Espina Bífida e Hidrocefalia de PR</h4>
+        <p class="resource-desc">Prevención, asistencia y apoyo para personas con espina bífida e hidrocefalia.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877400033">(787) 740-0033</a></span>
           <span class="web"><a href="https://espinabifidapr.com" target="_blank" rel="noopener">espinabifidapr.com</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="guaynabo" data-cat="diagnosticos">
-        <span class="tag tag-coral">Esclerosis Multiple</span>
-        <h4>Fundacion de Esclerosis Multiple de PR</h4>
-        <p class="resource-desc">Apoyo, educacion y servicios para personas con esclerosis multiple y sus familias.</p>
+        <span class="tag tag-coral">Esclerosis Múltiple</span>
+        <h4>Fundación de Esclerosis Múltiple de PR</h4>
+        <p class="resource-desc">Apoyo, educación y servicios para personas con esclerosis múltiple y sus familias.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877232331">(787) 723-2331</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="toda la isla" data-cat="diagnosticos">
-        <span class="tag tag-coral">Paralisis Cerebral</span>
-        <h4>Fundacion Juntos Construyendo un Sueno</h4>
-        <p class="resource-desc">Apoyo para familias de ninos con paralisis cerebral.</p>
+        <span class="tag tag-coral">Parálisis Cerebral</span>
+        <h4>Fundación Juntos Construyendo un Sueño</h4>
+        <p class="resource-desc">Apoyo para familias de niños con parálisis cerebral.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7876711877">(787) 671-1877</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="bayamon" data-cat="diagnosticos">
         <span class="tag tag-violet">Ceguera</span>
-        <h4>Asociacion de No-Videntes Luz de Amor</h4>
+        <h4>Asociación de No-Videntes Luz de Amor</h4>
         <p class="resource-desc">Apoyo comunitario para personas con ceguera.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:9394132713">(939) 413-2713</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="san juan" data-cat="diagnosticos">
-        <span class="tag tag-gold">Oncologia</span>
-        <h4>Fundacion CAP</h4>
-        <p class="resource-desc">Apoyo economico y clinico para ninos con cancer. Subvencion de tratamientos criticos.</p>
+        <span class="tag tag-gold">Oncología</span>
+        <h4>Fundación CAP</h4>
+        <p class="resource-desc">Apoyo económico y clínico para niños con cáncer. Subvención de tratamientos críticos.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877829760">(787) 782-9760</a></span>
           <span class="web"><a href="https://fundacioncap.org" target="_blank" rel="noopener">fundacioncap.org</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="ponce" data-cat="diagnosticos">
-        <span class="tag tag-gold">Oncologia</span>
+        <span class="tag tag-gold">Oncología</span>
         <h4>Go Go Foundation</h4>
-        <p class="resource-desc">Cancer pediatrico y salud especializada en Ponce.</p>
+        <p class="resource-desc">Cáncer pediátrico y salud especializada en Ponce.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7874995404">(787) 499-5404</a></span>
           <span class="web"><a href="https://gogofoundationpr.org" target="_blank" rel="noopener">gogofoundationpr.org</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="san juan" data-cat="diagnosticos">
-        <span class="tag tag-gold">Condiciones Cronicas</span>
-        <h4>Fundacion Ninos San Jorge</h4>
-        <p class="resource-desc">Apoyo economico para ninos con condiciones cronicas y complejas.</p>
+        <span class="tag tag-gold">Condiciones Crónicas</span>
+        <h4>Fundación Niños San Jorge</h4>
+        <p class="resource-desc">Apoyo económico para niños con condiciones crónicas y complejas.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877271000">(787) 727-1000</a></span>
           <span class="web"><a href="https://fundaciondeninospr.org" target="_blank" rel="noopener">fundaciondeninospr.org</a></span>
@@ -1057,7 +1197,7 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       <div class="resource-card" data-muni="san juan" data-cat="diagnosticos">
         <span class="tag tag-green">Neonatal</span>
         <h4>March of Dimes — Puerto Rico</h4>
-        <p class="resource-desc">Prevencion y apoyo para bebes prematuros y defectos de nacimiento.</p>
+        <p class="resource-desc">Prevención y apoyo para bebés prematuros y defectos de nacimiento.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877656052">(787) 765-6052</a></span>
           <address class="address">Hato Rey, San Juan</address>
@@ -1068,17 +1208,17 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
   </div>
 </div>
 
-<!-- ARTES, DEPORTES Y RECREACION -->
+<!-- ARTES, DEPORTES Y RECREACIÓN -->
 <div class="category-section" id="sec-artes">
   <div class="container">
-    <button class="back-link" onclick="showCatGrid()">&#8592; Volver a categorias</button>
-    <h2>Artes, Deportes y Recreacion</h2>
-    <p class="section-desc">Deportes adaptados, equinoterapia, musicoterapia, surf terapeutico, artes circenses y programas recreativos para ninos con diversidad funcional.</p>
+    <button class="back-link" onclick="showCatGrid()">&#8592; Volver a categorías</button>
+    <h2>Artes, Deportes y Recreación</h2>
+    <p class="section-desc">Deportes adaptados, equinoterapia, musicoterapia, surf terapéutico, artes circenses y programas recreativos para niños con diversidad funcional.</p>
     <div class="resource-grid">
       <div class="resource-card" data-muni="bayamon" data-cat="artes">
         <span class="tag tag-sun">Deportes</span>
         <h4>Special Olympics Puerto Rico</h4>
-        <p class="resource-desc">Deportes y competencias para personas con discapacidad intelectual. Multiples disciplinas.</p>
+        <p class="resource-desc">Deportes y competencias para personas con discapacidad intelectual. Múltiples disciplinas.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7872937784">(787) 293-7784</a></span>
           <span class="web"><a href="https://specialolympicspuertorico.org" target="_blank" rel="noopener">specialolympicspuertorico.org</a></span>
@@ -1087,7 +1227,7 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       <div class="resource-card" data-muni="trujillo alto" data-cat="artes">
         <span class="tag tag-green">Equinoterapia</span>
         <h4>Equinoterapia Puerto Rico — Hacienda La Pomarosa</h4>
-        <p class="resource-desc">Terapia ecuestre y rehabilitacion motora. Afiliada a PATH International. Estimula equilibrio y alineacion pelvica.</p>
+        <p class="resource-desc">Terapia ecuestre y rehabilitación motora. Afiliada a PATH International. Estimula equilibrio y alineación pélvica.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877677743">(787) 767-7743</a></span>
           <address class="address">Trujillo Alto, PR</address>
@@ -1096,25 +1236,25 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       </div>
       <div class="resource-card" data-muni="bayamon" data-cat="artes">
         <span class="tag tag-green">Equinoterapia</span>
-        <h4>Fundacion Carrusel</h4>
+        <h4>Fundación Carrusel</h4>
         <p class="resource-desc">Terapia a caballo en el Bosque Julio Enrique Monagas. Autismo y veteranos.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7873139800">(787) 313-9800</a></span>
-          <address class="address">Bayamon, PR</address>
+          <address class="address">Bayamón, PR</address>
         </div>
       </div>
       <div class="resource-card" data-muni="toda la isla" data-cat="artes">
         <span class="tag tag-green">Equinoterapia</span>
         <h4>West Coast Ecuestre</h4>
-        <p class="resource-desc">Cabalgata adaptada y psicoterapia asistida con equinos en la region oeste.</p>
+        <p class="resource-desc">Cabalgata adaptada y psicoterapia asistida con equinos en la región oeste.</p>
         <div class="resource-contact">
           <span class="web"><a href="https://westcoastecuestre.org" target="_blank" rel="noopener">westcoastecuestre.org</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="san juan" data-cat="artes">
-        <span class="tag tag-violet">Musica</span>
-        <h4>Conservatorio de Musica de Puerto Rico</h4>
-        <p class="resource-desc">Escuela Preparatoria con Kindermusik y Despertar Musical desde 3 meses. Potencia apego familiar y desarrollo ritmico.</p>
+        <span class="tag tag-violet">Música</span>
+        <h4>Conservatorio de Música de Puerto Rico</h4>
+        <p class="resource-desc">Escuela Preparatoria con Kindermusik y Despertar Musical desde 3 meses. Potencia apego familiar y desarrollo rítmico.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877510160">(787) 751-0160</a></span>
           <address class="address">Miramar, San Juan</address>
@@ -1124,22 +1264,22 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       <div class="resource-card" data-muni="toda la isla" data-cat="artes">
         <span class="tag tag-sky">Surf</span>
         <h4>Surf 4 DEM</h4>
-        <p class="resource-desc">Surf terapeutico para ninos con autismo y diversidad funcional. El entorno marino como medio de regulacion sensorial.</p>
+        <p class="resource-desc">Surf terapéutico para niños con autismo y diversidad funcional. El entorno marino como medio de regulación sensorial.</p>
         <div class="resource-contact">
           <span class="web"><a href="https://surf4dem.org" target="_blank" rel="noopener">surf4dem.org</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="bayamon" data-cat="artes">
         <span class="tag tag-sun">Soccer</span>
-        <h4>Fundacion Golitos</h4>
-        <p class="resource-desc">Soccer adaptado para ninos con autismo.</p>
+        <h4>Fundación Golitos</h4>
+        <p class="resource-desc">Soccer adaptado para niños con autismo.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7874130036">(787) 413-0036</a></span>
           <span class="web"><a href="https://golitos.org" target="_blank" rel="noopener">golitos.org</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="dorado" data-cat="artes">
-        <span class="tag tag-sun">Circo</span>
+        <span class="tag tag-pink">Circo</span>
         <h4>CIRCOPERATIVO</h4>
         <p class="resource-desc">Artes circenses, acrobacia y equilibrismo adaptado en Dorado.</p>
         <div class="resource-contact">
@@ -1147,9 +1287,9 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
         </div>
       </div>
       <div class="resource-card" data-muni="toda la isla" data-cat="artes">
-        <span class="tag tag-sky">Paralimpico</span>
-        <h4>Deportes Paralimpicos en Puerto Rico</h4>
-        <p class="resource-desc">Baloncesto en silla de ruedas, goalball, judo para ciegos, tenis de mesa paralimpico y mas disciplinas.</p>
+        <span class="tag tag-sky">Paralímpico</span>
+        <h4>Deportes Paralímpicos en Puerto Rico</h4>
+        <p class="resource-desc">Baloncesto en silla de ruedas, goalball, judo para ciegos, tenis de mesa paralímpico y más disciplinas.</p>
         <div class="resource-contact">
           <span class="web"><a href="https://cedd.pr.gov" target="_blank" rel="noopener">CEDD — Directorio de Deportes Adaptados</a></span>
         </div>
@@ -1158,34 +1298,34 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
   </div>
 </div>
 
-<!-- TECNOLOGIA ASISTIVA -->
+<!-- TECNOLOGÍA ASISTIVA -->
 <div class="category-section" id="sec-tecnologia">
   <div class="container">
-    <button class="back-link" onclick="showCatGrid()">&#8592; Volver a categorias</button>
-    <h2>Tecnologia Asistiva</h2>
-    <p class="section-desc">Equipos de comunicacion, dispositivos adaptativos, prestamos de equipo y programas de asistencia tecnologica.</p>
+    <button class="back-link" onclick="showCatGrid()">&#8592; Volver a categorías</button>
+    <h2>Tecnología Asistiva</h2>
+    <p class="section-desc">Equipos de comunicación, dispositivos adaptativos, préstamos de equipo y programas de asistencia tecnológica.</p>
     <div class="resource-grid">
       <div class="resource-card" data-muni="san juan" data-cat="tecnologia">
         <span class="tag tag-sky">UPR</span>
-        <h4>PRATP — Programa de Asistencia Tecnologica de PR</h4>
-        <p class="resource-desc">Prestamos de equipo, demostraciones, adiestramiento y defensoria en tecnologia asistiva. Desde 1993 (Ley 264). Para todas las edades.</p>
+        <h4>PRATP — Programa de Asistencia Tecnológica de PR</h4>
+        <p class="resource-desc">Préstamos de equipo, demostraciones, adiestramiento y defensoría en tecnología asistiva. Desde 1993 (Ley 264). Para todas las edades.</p>
         <div class="resource-contact">
-          <address class="address">Instituto FILIUS, 1187 Calle Flamboyan, San Juan PR 00926</address>
+          <address class="address">Instituto FILIUS, 1187 Calle Flamboyán, San Juan PR 00926</address>
           <span class="web"><a href="https://pratp.upr.edu" target="_blank" rel="noopener">pratp.upr.edu</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="san juan" data-cat="tecnologia">
         <span class="tag tag-sky">UPR</span>
-        <h4>Instituto FILIUS — UPR Ciencias Medicas</h4>
-        <p class="resource-desc">Alberga PRATP y programas de discapacidad del Recinto de Ciencias Medicas.</p>
+        <h4>Instituto FILIUS — UPR Ciencias Médicas</h4>
+        <p class="resource-desc">Alberga PRATP y programas de discapacidad del Recinto de Ciencias Médicas.</p>
         <div class="resource-contact">
-          <address class="address">1187 Calle Flamboyan, San Juan PR 00926</address>
+          <address class="address">1187 Calle Flamboyán, San Juan PR 00926</address>
         </div>
       </div>
       <div class="resource-card" data-muni="toda la isla" data-cat="tecnologia">
         <span class="tag tag-gold">Equipos</span>
-        <h4>Equipos Ortopedicos y Asistivos</h4>
-        <p class="resource-desc">Sillas de ruedas, comunicadores, equipo adaptativo. Contacte PRATP, MDA o la Asociacion Pro-ciudadanos de Sabana Grande para prestamos y donaciones.</p>
+        <h4>Equipos Ortopédicos y Asistivos</h4>
+        <p class="resource-desc">Sillas de ruedas, comunicadores, equipo adaptativo. Contacte PRATP, MDA o la Asociación Pro-ciudadanos de Sabana Grande para préstamos y donaciones.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7878732060">(787) 873-2060</a> (Sabana Grande)</span>
         </div>
@@ -1194,17 +1334,17 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
   </div>
 </div>
 
-<!-- TRANSICION Y VIDA ADULTA -->
+<!-- TRANSICIÓN Y VIDA ADULTA -->
 <div class="category-section" id="sec-transicion">
   <div class="container">
-    <button class="back-link" onclick="showCatGrid()">&#8592; Volver a categorias</button>
-    <h2>Transicion y Vida Adulta</h2>
-    <p class="section-desc">Programas de transicion para jovenes 16+, rehabilitacion vocacional, vivienda asistida, insercion laboral y vida independiente.</p>
+    <button class="back-link" onclick="showCatGrid()">&#8592; Volver a categorías</button>
+    <h2>Transición y Vida Adulta</h2>
+    <p class="section-desc">Programas de transición para jóvenes 16+, rehabilitación vocacional, vivienda asistida, inserción laboral y vida independiente.</p>
     <div class="resource-grid">
       <div class="resource-card" data-muni="san juan" data-cat="transicion">
         <span class="tag tag-green">Gobierno</span>
-        <h4>ARV — Administracion de Rehabilitacion Vocacional</h4>
-        <p class="resource-desc">Agencia estatal para capacitacion e insercion laboral de jovenes y adultos con impedimentos. Transicion del entorno escolar al empleo.</p>
+        <h4>ARV — Administración de Rehabilitación Vocacional</h4>
+        <p class="resource-desc">Agencia estatal para capacitación e inserción laboral de jóvenes y adultos con impedimentos. Transición del entorno escolar al empleo.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877290160">(787) 729-0160</a></span>
           <span class="web"><a href="https://arv.pr.gov" target="_blank" rel="noopener">arv.pr.gov</a></span>
@@ -1212,7 +1352,7 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       </div>
       <div class="resource-card" data-muni="mayaguez" data-cat="transicion">
         <span class="tag tag-sun">Vivienda</span>
-        <h4>AMPI — Asociacion Mayaguezana de Personas con Impedimentos</h4>
+        <h4>AMPI — Asociación Mayagüezana de Personas con Impedimentos</h4>
         <p class="resource-desc">Fundada por padres. Programas de vivienda asistida bajo fondos HUD. Vida comunitaria supervisada e independiente.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7878327460">(787) 832-7460</a></span>
@@ -1221,8 +1361,8 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       </div>
       <div class="resource-card" data-muni="bayamon" data-cat="transicion">
         <span class="tag tag-sun">Residencial</span>
-        <h4>IPPR — Instituto Psicopedagogico de Puerto Rico</h4>
-        <p class="resource-desc">Servicios residenciales, programas diurnos y atencion clinica para adultos con discapacidades intelectuales. Desde 1949.</p>
+        <h4>IPPR — Instituto Psicopedagógico de Puerto Rico</h4>
+        <p class="resource-desc">Servicios residenciales, programas diurnos y atención clínica para adultos con discapacidades intelectuales. Desde 1949.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877835431">(787) 783-5431</a></span>
           <span class="web"><a href="https://ipprpr.org" target="_blank" rel="noopener">ipprpr.org</a></span>
@@ -1230,8 +1370,8 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       </div>
       <div class="resource-card" data-muni="san juan" data-cat="transicion">
         <span class="tag tag-sun">Escuela</span>
-        <h4>CODERI — Programa de Transicion</h4>
-        <p class="resource-desc">Enfoque en autonomia y transicion a la vida adulta independiente para jovenes con discapacidad intelectual y autismo.</p>
+        <h4>CODERI — Programa de Transición</h4>
+        <p class="resource-desc">Enfoque en autonomía y transición a la vida adulta independiente para jóvenes con discapacidad intelectual y autismo.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877656147">(787) 765-6147</a></span>
           <span class="web"><a href="https://coderipr.com" target="_blank" rel="noopener">coderipr.com</a></span>
@@ -1239,8 +1379,8 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       </div>
       <div class="resource-card" data-muni="cayey" data-cat="transicion">
         <span class="tag tag-sky">Respiro</span>
-        <h4>Centro de Respiro y Rehabilitacion San Francisco</h4>
-        <p class="resource-desc">Cuidado temporal y rehabilitacion. Modelo aplicable para discapacidades severas.</p>
+        <h4>Centro de Respiro y Rehabilitación San Francisco</h4>
+        <p class="resource-desc">Cuido temporal y rehabilitación. Modelo aplicable para discapacidades severas.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877381834">(787) 738-1834</a></span>
           <address class="address">Carr. 715 Km 0.7, Cayey</address>
@@ -1262,14 +1402,14 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
 <!-- APOYO A FAMILIAS -->
 <div class="category-section" id="sec-familias">
   <div class="container">
-    <button class="back-link" onclick="showCatGrid()">&#8592; Volver a categorias</button>
+    <button class="back-link" onclick="showCatGrid()">&#8592; Volver a categorías</button>
     <h2>Apoyo a Familias</h2>
-    <p class="section-desc">Grupos de apoyo, capacitacion para padres, respiro familiar y centros de informacion y referidos.</p>
+    <p class="section-desc">Grupos de apoyo, capacitación para padres, respiro familiar y centros de información y referidos.</p>
     <div class="resource-grid">
       <div class="resource-card" data-muni="san juan" data-cat="familias">
         <span class="tag tag-sun">Padres</span>
-        <h4>APNI — Centro de Informacion para Padres</h4>
-        <p class="resource-desc">El PTI de Puerto Rico. Capacitacion sobre derechos, PEI, evaluaciones y recursos. Apoyo de pares por 47+ anos.</p>
+        <h4>APNI — Centro de Información para Padres</h4>
+        <p class="resource-desc">El PTI de Puerto Rico. Capacitación sobre derechos, PEI, evaluaciones y recursos. Apoyo de pares por 47+ años.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:18009818492">1-800-981-8492</a></span>
           <span class="web"><a href="https://apnipr.org" target="_blank" rel="noopener">apnipr.org</a></span>
@@ -1278,7 +1418,7 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       <div class="resource-card" data-muni="san juan" data-cat="familias">
         <span class="tag tag-violet">UPR</span>
         <h4>PR Family-to-Family Center</h4>
-        <p class="resource-desc">Centro del Recinto de Ciencias Medicas. Apoyo, informacion y recursos para familias de ninos con necesidades especiales de salud.</p>
+        <p class="resource-desc">Centro del Recinto de Ciencias Médicas. Apoyo, información y recursos para familias de niños con necesidades especiales de salud.</p>
         <div class="resource-contact">
           <span class="web"><a href="https://rcm1.rcm.upr.edu/familycenter" target="_blank" rel="noopener">UPR Family Center</a></span>
         </div>
@@ -1286,7 +1426,7 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       <div class="resource-card" data-muni="san juan" data-cat="familias">
         <span class="tag tag-violet">Autismo</span>
         <h4>Alianza de Autismo — Grupos de Apoyo</h4>
-        <p class="resource-desc">Grupos en San Juan, Caguas, Ponce, Mayaguez, Isabela y Arecibo para familias con TEA.</p>
+        <p class="resource-desc">Grupos en San Juan, Caguas, Ponce, Mayagüez, Isabela y Arecibo para familias con TEA.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7876472718">(787) 647-2718</a></span>
           <span class="web"><a href="https://alianzaautismo.com" target="_blank" rel="noopener">alianzaautismo.com</a></span>
@@ -1294,8 +1434,8 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       </div>
       <div class="resource-card" data-muni="sabana grande" data-cat="familias">
         <span class="tag tag-green">Comunidad</span>
-        <h4>Asociacion Pro-ciudadanos con Impedimentos — Sabana Grande</h4>
-        <p class="resource-desc">Equipos ortopedicos, apoyo directo y servicios comunitarios.</p>
+        <h4>Asociación Pro-ciudadanos con Impedimentos — Sabana Grande</h4>
+        <p class="resource-desc">Equipos ortopédicos, apoyo directo y servicios comunitarios.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7878732060">(787) 873-2060</a></span>
         </div>
@@ -1315,40 +1455,40 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
 <!-- PROGRAMAS DE GOBIERNO -->
 <div class="category-section" id="sec-gobierno">
   <div class="container">
-    <button class="back-link" onclick="showCatGrid()">&#8592; Volver a categorias</button>
+    <button class="back-link" onclick="showCatGrid()">&#8592; Volver a categorías</button>
     <h2>Programas de Gobierno</h2>
-    <p class="section-desc">Agencias gubernamentales, programas estatales y federales, Plan Vital, SSI y otros beneficios para ninos con discapacidades.</p>
+    <p class="section-desc">Agencias gubernamentales, programas estatales y federales, Plan Vital, SSI y otros beneficios para niños con discapacidades.</p>
     <div class="resource-grid">
       <div class="resource-card" data-muni="san juan" data-cat="gobierno">
         <span class="tag tag-gold">Gobierno</span>
         <h4>CEDD — Consejo Estatal sobre Deficiencias en el Desarrollo</h4>
-        <p class="resource-desc">Promueve inclusion y participacion plena. Extenso directorio de recursos en su sitio web.</p>
+        <p class="resource-desc">Promueve inclusión y participación plena. Extenso directorio de recursos en su sitio web.</p>
         <div class="resource-contact">
-          <address class="address">Ave. Ponce de Leon 1225, Parada 18, Edif. VIG Tower, Suite B 104, San Juan</address>
+          <address class="address">Ave. Ponce de León 1225, Parada 18, Edif. VIG Tower, Suite B 104, San Juan</address>
           <span class="web"><a href="https://cedd.pr.gov" target="_blank" rel="noopener">cedd.pr.gov</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="toda la isla" data-cat="gobierno">
         <span class="tag tag-gold">Gobierno</span>
-        <h4>Secretaria de Educacion Especial — DEPR</h4>
-        <p class="resource-desc">Administra educacion especial bajo Ley 51 e IDEA. Servicios de evaluacion, terapias y PEI en escuelas publicas.</p>
+        <h4>Secretaría de Educación Especial — DEPR</h4>
+        <p class="resource-desc">Administra educación especial bajo Ley 51 e IDEA. Servicios de evaluación, terapias y PEI en escuelas públicas.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877592000">(787) 759-2000</a></span>
-          <span class="web"><a href="https://de.pr.gov/educacion-especial/" target="_blank" rel="noopener">de.pr.gov/educacion-especial</a></span>
+          <span class="web"><a href="https://de.pr.gov/educacion-especial/" target="_blank" rel="noopener">de.pr.gov/educación-especial</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="toda la isla" data-cat="gobierno">
         <span class="tag tag-green">Salud</span>
-        <h4>Plan Vital (Medicaid PR) — Cobertura Pediatrica</h4>
-        <p class="resource-desc">Cubre terapias, evaluaciones y servicios medicos para ninos con discapacidades elegibles. Incluye terapia fisica, ocupacional y del habla.</p>
+        <h4>Plan Vital (Medicaid PR) — Cobertura Pediátrica</h4>
+        <p class="resource-desc">Cubre terapias, evaluaciones y servicios médicos para niños con discapacidades elegibles. Incluye terapia física, ocupacional y del habla.</p>
         <div class="resource-contact">
           <span class="web"><a href="https://www.medicaid.pr.gov" target="_blank" rel="noopener">medicaid.pr.gov</a></span>
         </div>
       </div>
       <div class="resource-card" data-muni="toda la isla" data-cat="gobierno">
         <span class="tag tag-gold">Beneficio</span>
-        <h4>SSI — Ingreso Suplementario para Ninos</h4>
-        <p class="resource-desc">Beneficio federal para ninos con discapacidades en hogares de bajos ingresos.</p>
+        <h4>SSI — Ingreso Suplementario para Niños</h4>
+        <p class="resource-desc">Beneficio federal para niños con discapacidades en hogares de bajos ingresos.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:18007721213">1-800-772-1213</a></span>
           <span class="web"><a href="https://www.ssa.gov/ssi/" target="_blank" rel="noopener">ssa.gov/ssi</a></span>
@@ -1357,7 +1497,7 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
       <div class="resource-card" data-muni="toda la isla" data-cat="gobierno">
         <span class="tag tag-gold">Gobierno</span>
         <h4>Departamento de la Familia</h4>
-        <p class="resource-desc">Administra servicios sociales, PAN, WIC y programas de apoyo para familias con ninos con necesidades especiales.</p>
+        <p class="resource-desc">Administra servicios sociales, PAN, WIC y programas de apoyo para familias con niños con necesidades especiales.</p>
         <div class="resource-contact">
           <span class="phone"><a href="tel:7877218400">(787) 721-8400</a></span>
           <span class="web"><a href="https://www.familia.pr.gov" target="_blank" rel="noopener">familia.pr.gov</a></span>
@@ -1371,7 +1511,7 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
 <div class="municipio-view" id="municipioView">
   <div class="container">
     <h2 style="font-size:24px;margin-bottom:6px;">Buscar por Municipio</h2>
-    <p style="color:var(--text-mid);margin-bottom:20px;font-size:15px;">Selecciona tu municipio para ver los recursos disponibles en tu area.</p>
+    <p style="color:var(--text-mid);margin-bottom:20px;font-size:15px;">Selecciona tu municipio para ver los recursos disponibles en tu área.</p>
     <div class="municipio-search-wrap">
       <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
       <input type="text" id="muniSearch" placeholder="Buscar municipio..." aria-label="Buscar municipio">
@@ -1390,13 +1530,30 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
   </div>
 </div>
 
+<!-- Conócenos -->
+<section class="about-section" id="conocenos">
+  <div class="container">
+    <div class="about-card">
+      <div class="about-icons">
+        <span>&#x2600;</span>
+        <span>&#x1F49B;</span>
+        <span>&#x1F1F5;&#x1F1F7;</span>
+      </div>
+      <h2>Conócenos — ¿Por Qué lo Hacemos?</h2>
+      <p>RayitoDeSolPR.org nace del corazón de una familia puertorriqueña que conoce de primera mano los retos de crecer con una condición y la importancia de tener acceso a los recursos correctos.</p>
+      <p>Su creador fue diagnosticado con <strong>diabetes tipo 1 a los 3 años</strong> y sabe lo que significa crecer navegando un sistema de salud complejo. Su madre fue <strong>maestra de educación especial por más de 6 años</strong>, dedicada a atender niños y jóvenes con necesidades especiales con amor y profesionalismo. Junto a su hermana, se dieron a la tarea de crear este recurso.</p>
+      <p>Sabemos que cuando recibes un diagnóstico, el mundo parece detenerse. Buscas respuestas, buscas ayuda, y muchas veces no sabes por dónde empezar. Este directorio existe para que ninguna familia tenga que buscar sola. Para que cada padre, madre, abuelo o encargado pueda encontrar — en un solo lugar — las terapias, escuelas, programas y servicios que sus hijos necesitan.</p>
+      <p>No estamos afiliados a ninguna empresa privada, agencia gubernamental ni organización listada aquí. Este es un proyecto <strong>independiente, gratuito y hecho con mucho amor</strong> por una familia boricua para todas las familias de Puerto Rico.</p>
+      <p class="about-signature">Con esperanza de ser un verdadero rayito de sol para tu familia. &#x2600;</p>
+    </div>
+  </div>
+</section>
+
 <!-- Disclaimer -->
 <section style="padding: 0 0 40px;">
   <div class="container">
     <div class="disclaimer">
-      <strong>Nuestra Historia:</strong> RayitoDeSolPR.org nace del corazon de una familia puertorriquena. Su creador fue diagnosticado con diabetes tipo 1 a los 3 anos y conoce de primera mano lo que significa crecer con una condicion. Su madre fue maestra de educacion especial por mas de 6 anos, dedicada a atender ninos y jovenes con necesidades especiales. Junto a su hermana, se dieron a la tarea de crear este recurso con la esperanza de que sea un verdadero rayito de sol para otras familias que recorren este camino.
-      <br><br>
-      <strong>Aviso Importante:</strong> Este es un sitio web informativo independiente, creado de forma gratuita y voluntaria. <strong>No estamos asociados a ninguna empresa privada, entidad gubernamental ni organizacion listada en este directorio.</strong> La informacion se recopila de fuentes publicas y se actualiza periodicamente. Recomendamos verificar directamente con cada organizacion para confirmar disponibilidad, horarios y requisitos. Si encuentra informacion incorrecta o desea sugerir un recurso, contactenos.
+      <strong>Aviso Legal:</strong> RayitoDeSolPR.org es un sitio web informativo independiente, creado de forma gratuita y voluntaria. <strong>No estamos asociados a ninguna empresa privada, entidad gubernamental ni organización listada en este directorio.</strong> La información se recopila de fuentes públicas y se actualiza periódicamente. Recomendamos verificar directamente con cada organización para confirmar disponibilidad, horarios y requisitos. Si encuentra información incorrecta o desea sugerir un recurso, contáctenos.
     </div>
   </div>
 </section>
@@ -1405,25 +1562,25 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-rad
 <footer class="footer">
   <div class="container">
     <strong>RayitoDeSolPR.org</strong><br>
-    Un directorio gratuito de recursos para ninos y jovenes con diversidad funcional en Puerto Rico.<br>
+    Un directorio gratuito de recursos para niños y jóvenes con diversidad funcional en Puerto Rico.<br>
     <span style="opacity:0.7;font-size:13px;">Creado con amor por una familia boricua que entiende el camino. Para ti y los tuyos. &#x2600;</span><br>
     <span style="opacity:0.5;font-size:13px;">Sitio informativo independiente. No afiliado a entidades gubernamentales ni comerciales.</span><br>
     <span style="opacity:0.4;font-size:12px;margin-top:6px;display:inline-block;">&copy; 2026 RayitoDeSolPR.org — Hecho con mucho amor para Puerto Rico</span><br>
-    <a href="mailto:paganlugodj@gmail.com?subject=RayitoDeSolPR.org%20-%20Informacion%20incorrecta&body=Recurso:%0AMunicipio:%0ADetalle:" style="display:inline-block;margin-top:10px;background:var(--sun);color:#fff;padding:8px 18px;border-radius:8px;text-decoration:none;font-size:14px;font-weight:700;">Reportar informacion incorrecta</a>
+    <a href="mailto:paganlugodj@gmail.com?subject=RayitoDeSolPR.org%20-%20Información%20incorrecta&body=Recurso:%0AMunicipio:%0ADetalle:" style="display:inline-block;margin-top:10px;background:var(--sun);color:#fff;padding:8px 18px;border-radius:8px;text-decoration:none;font-size:14px;font-weight:700;">Reportar información incorrecta</a>
   </div>
 </footer>
 
 <script>
 const municipios = [
-  "Adjuntas","Aguada","Aguadilla","Aguas Buenas","Aibonito","Anasco","Arecibo","Arroyo",
-  "Barceloneta","Barranquitas","Bayamon","Cabo Rojo","Caguas","Camuy","Canovanas","Carolina",
-  "Catano","Cayey","Ceiba","Ciales","Cidra","Coamo","Comerio","Corozal","Culebra",
-  "Dorado","Fajardo","Florida","Guanica","Guayama","Guayanilla","Guaynabo","Gurabo",
-  "Hatillo","Hormigueros","Humacao","Isabela","Jayuya","Juana Diaz","Juncos","Lajas",
-  "Lares","Las Marias","Las Piedras","Loiza","Luquillo","Manati","Maricao","Maunabo",
-  "Mayaguez","Moca","Morovis","Naguabo","Naranjito","Orocovis","Patillas","Penuelas",
-  "Ponce","Quebradillas","Rincon","Rio Grande","Sabana Grande","Salinas","San German",
-  "San Juan","San Lorenzo","San Sebastian","Santa Isabel","Toa Alta","Toa Baja",
+  "Adjuntas","Aguada","Aguadilla","Aguas Buenas","Aibonito","Añasco","Arecibo","Arroyo",
+  "Barceloneta","Barranquitas","Bayamón","Cabo Rojo","Caguas","Camuy","Canóvanas","Carolina",
+  "Cataño","Cayey","Ceiba","Ciales","Cidra","Coamo","Comerío","Corozal","Culebra",
+  "Dorado","Fajardo","Florida","Guánica","Guayama","Guayanilla","Guaynabo","Gurabo",
+  "Hatillo","Hormigueros","Humacao","Isabela","Jayuya","Juana Díaz","Juncos","Lajas",
+  "Lares","Las Marías","Las Piedras","Loíza","Luquillo","Manatí","Maricao","Maunabo",
+  "Mayagüez","Moca","Morovis","Naguabo","Naranjito","Orocovis","Patillas","Peñuelas",
+  "Ponce","Quebradillas","Rincón","Río Grande","Sabana Grande","Salinas","San Germán",
+  "San Juan","San Lorenzo","San Sebastián","Santa Isabel","Toa Alta","Toa Baja",
   "Trujillo Alto","Utuado","Vega Alta","Vega Baja","Vieques","Villalba","Yabucoa","Yauco"
 ];
 
@@ -1433,12 +1590,12 @@ municipios.forEach(m => {
   btn.className = 'municipio-btn';
   btn.textContent = m;
   btn.onclick = () => showMuniDetail(m);
-  btn.dataset.name = m.toLowerCase();
+  btn.dataset.name = m.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
   muniGridEl.appendChild(btn);
 });
 
 document.getElementById('muniSearch').addEventListener('input', function() {
-  const q = this.value.toLowerCase();
+  const q = this.value.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
   muniGridEl.querySelectorAll('.municipio-btn').forEach(btn => {
     btn.classList.toggle('hidden', q.length > 0 && !btn.dataset.name.includes(q));
   });
@@ -1496,10 +1653,10 @@ function showMuniDetail(muni) {
 
   if (found === 0) {
     grid.innerHTML = '<div style="grid-column:1/-1;padding:40px 20px;text-align:center;color:var(--text-mid);">' +
-      '<p style="font-size:18px;margin-bottom:12px;">No encontramos recursos especificos para <strong>' + muni + '</strong> en nuestra base de datos.</p>' +
+      '<p style="font-size:18px;margin-bottom:12px;">No encontramos recursos específicos para <strong>' + muni + '</strong> en nuestra base de datos.</p>' +
       '<p>Te recomendamos:</p>' +
-      '<p style="margin-top:8px;"><strong>1.</strong> Llamar a <a href="tel:18009818492" style="font-weight:700;">APNI 1-800-981-8492</a> para orientacion</p>' +
-      '<p><strong>2.</strong> Llamar al <a href="tel:211" style="font-weight:700;">2-1-1</a> para informacion y referidos</p>' +
+      '<p style="margin-top:8px;"><strong>1.</strong> Llamar a <a href="tel:18009818492" style="font-weight:700;">APNI 1-800-981-8492</a> para orientación</p>' +
+      '<p><strong>2.</strong> Llamar al <a href="tel:211" style="font-weight:700;">2-1-1</a> para información y referidos</p>' +
       '<p><strong>3.</strong> Visitar <a href="https://cedd.pr.gov" target="_blank" rel="noopener" style="font-weight:700;">CEDD</a> para el directorio completo</p>' +
       '</div>';
   }
